@@ -5,18 +5,346 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <script type="module" crossorigin src="/RocketCamp_Week2_AiTool/assets/main-2d761428.js"></script>
-    <link rel="stylesheet" href="/RocketCamp_Week2_AiTool/assets/main-4cfea7bd.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;700;900&family=Roboto&family=Rubik+Bubbles&family=Shadows+Into+Light&family=Silkscreen&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="/RocketCamp_Week2_AiTool/assets/main-f7ae8ef2.js"></script>
+    <link rel="stylesheet" href="/RocketCamp_Week2_AiTool/assets/main-c21de485.css">
   </head>
   <body>
-    <h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
-    <h1 class="index-title">我是首頁</h1>
-    <img src="/RocketCamp_Week2_AiTool/assets/cat-0c0689ae.jpg" style="width: 300px;" alt="cat">
-
-    <footer class="footer">我是 footer</footer>
+    <!-- header -->
+    <div class="container">
+      <header>
+    <nav>
+        <div class="logo">
+            <a href="../pages/index.html"><img src="/RocketCamp_Week2_AiTool/assets/logo-46d6a116.png" alt="首頁圖片"></a>
+            <ul class="nav_list">
+                <li class="nav_item"><a href="../pages/index.html">首頁</a></li>
+                <li class="nav_item"><a href="../pages/pricing.html">定價</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>    </div>
+    <!-- 主內容、我們的服務、來自合作夥伴 -->
+    <div class="container">
+      <div class="index_content">
+        <section>
+          <h1 class="index-title">
+            透過 <br>
+            AI 工具王的 <br>
+            強大模型 <br>
+            讓您的業務<br class="md-display-no">更聰明
+          </h1>
+          <a href="#" class="start_button">
+            開始使用
+          </a>
+          <div class="motin">
+            <img src="data:image/png;base64,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" alt="deco">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAgUSURBVHgB7d3tdRNHFMbxq5x8j6kgooJABYgKklQQU0FMBbYriKnAdgWYCmwqACrwUgGkgskMM4K1Ysv7PrPP/n/nzJFyCJZZPb6+Mzu7Whl6cZ4NaOUZOvvJACEEGlIINKQQaEgh0JBCoCGFQEMKgYYUAg0pBBpSCDSkEGhIIdCQQqAhhUBDCoGGFAINKQQaUgg0pBBoSCHQkEKgIYVAQwqBhhQCDSkEGlIINKQQaEgh0JBCoCGFQEMKgYYUAg0pBBpSCDSkEGhIIdCQQqAhhUBDCoGGFAINKQQaUgg0pBBoSCHQkEKgIYVAQwqBhhQCDSkEGlIINKQQaEgh0JBCoCGFQEMKgYYUAg0pBBpSCDSkEGhIIdCQQqAhhUBDCoGGFAINKQQaUgg0pBBoSCHQkEKgIYVAQwqBhhQCDSkEGlIINKQQaEgh0JBCoCGFQEPKz86r/ffXNIKq9vhveqzSn39crVZfDRiJj+WBf1j78cyP7fNfas8P0v96UHtuq51At/Et2OnxfXq+uKD3OH738sdvZQuSgruxGNLfLAY4PD+wDlZDvyEWq3gIdwj5jX9/PpowAt2OP1whsBuL4Q2PaxvQGIHeFSr2jR/vLAa8MiEEej9/eNb+4Q8/XlgMcKfK29QUgd5VWQz3lX/vbmzmCPT/+UOysRji323gCvyYHIGuqyxW78u5hptAR7UQ/2UjV+F9cge6rvLjjcXKXdlMLDnQaUL3tx+HNnElfkhJga67sli1r6xwSwx0qsbHFnviopQa6K3Kj1OLVbvI5cClBLrEanyf0gO9VVms2m9Ka0fUA10L8pFl7I2bmkug6y78OC0l2KqBnluQt+YY6K0Ti312ZRmpBXquQd6ac6CDymIbcmaZqAR67kHemnugtyqLbciFTUwh0GnV4twKnuw1pbJ9dO3HuX9jztOpVjQQjpUf1/5pGGsToLYf+tCPW/8mHRv2SsfogxW4ltyHSstxn8qPl2NPGufWcqTdbhcWd7vJUb5iZW1U6ztqVVkyzIFyha6rbKRqPYcKneYV4cSUbJC3lnJN4dqPD/6NPbKF8f/msBQnXZXr7lSD2grBQW2s0/jVflzjNWdhzfp0qL0hpVbotK4cWow5/xBvr3ENVz19th/XtFa1P7P6b95OBy9NLNYWw/3CflzIOBeVDdSClBjombYY2+B+So+drm4arF9LIQ8jXKWwsfIDXvnxqu+FBaUFOp0keWvlH/8Q4PBDFwI82B740ZaIcl6G09KJP5in1lFJgU79crZtAA1UflxarL43NoJJTrOm6n1o5Ya7c6hLCXRakjux8oRKHK5EGi3EWYXK7ceFK8+5deAGZi35v3Lg4in/knzx462Lv6UnlW2roosTl43FmfjayhAmIy/brICEd88G1KZCu7iScWPlTP621fhsteQ7a/k35tCPW1eGsF69bvG9D6rF64aNRR9dGa79ODTc5coJ9q1rGGo3sIavuXZlHKdrl6GtmB1XRrBvXYNQu4E1eL0SwnzrCHJ7Ln+wb90joXYDe+S1coc5TPYWt31gUOlNzLkqEnrqgz3f36D2vE5YzcjZM5+5PcehFHO6S8/a8l1Z8eDqx74QdvHQKkcIs+VZzahsgDOqU5nNbrtwatSPpxZvPDO1cGLoH8vExTXyHGEOS3DPJU+IlMTl6yWP7/leBnXP1z9207t1TPqm5WJPeeamd7TzfQxq52sfu+nNoleW5Q/+kYuz7yltaq8/qNrX3bhpSaxgzGZSuI+bfsIYJoeht6zqIRxCmBRm+PdUfvyp8PEhMh9/kEIQ9gFPdUXNt5UPP77YsJ5YvGRqbdMI+5E3KnsvZK4pTKsgzy3OzKcQfnDGuKJ8ys1al/6YPVPaSCRToet8tT6xccKm5NQH+cTESAY6INR7SYY5kA10QKjv9Trn3VrHJh3owMV9up2uRhH0KscdWqckf6OZ9Aa+NpyqhzlYxJ2T0q/YHHtASiHbMy9a6Knd8pzYgsj30Lv8G3xh8dNOlyB8XMeiNuQvLtCBD3U4EzfVGcVcPoWTJrYwS7n76K5wyroyXZXFu1YtziIrdODi3ZzCBiC1rZLfN07ZAi21QlvaWaa48lHMh5IiA5fnIoGxyJ4BbGqxLceWi1dnTLldcyyVxVZjubfgMgL9jYtXoFzbvD2l1VhwD12Xrmqeah/1GOibEyp0MuPWY3t7BxgV+rvUe76y+Xlp+I5A18yw9big1biLlmNHaj1ubR4fevSSQN9Fhd6RWo85nHBhIngPKvQDfKUOVXptZWIi+AAq9MNKniAu+WKFvajQe/gqHU62bKwsVOc9qND7lVgJqc57UKEfUViVpjo/ggr9uEsrB9X5EVToBnyVDjdkzL0uTXVugArdTAlnD6nODVChGyjk7CHbQxugQjeQzh6+t3zYs9EQgW4u5+VNJU1Mi0bL0UKmySGTwRao0O3kmBy+MzRGoNu5seldGBqj5Whp4l14tBstUaHbm3KCRrvREoFu78amc2VohZajg4lWO776duOJoRUqdDdTtAI5T+TMFoHuZoqPEKbd6IBAdzNF2Gb/uds50EN3NHIfTf/cERW6uzErKNW5IwLd3ScbDxPCjgh0d1ToAhHo7m5sPJWhEyaFPYw1MfQTQt6XjqjQ/Yzx8Q+0Gz0Q6H7GmBh+NnRGoPupbHiVoTMC3U9lw6sMnRHofsbooStDZwS6n8qGt+jPGeyLQPczRvgIdA8Euh8CXRgCDSmckeopfGK8DYizhP1QoSGFQEPKfwqRbyEFEPPRAAAAAElFTkSuQmCC" alt="deco">
+            <img src="data:image/png;base64,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" alt="deco">
+          </div>
+        </section>
+        <section class="our_service">
+          <div>
+            <h3 class="col-4">我們的服務</h3>
+            <p class="col-8">我們相信透過 AI 技術，<br>
+              包括圖像識別、自然語言處理和機器翻譯等，讓您更快、更準確地做出決策。</p>
+          </div>
+          <ul class="service_list">
+            <li class="service_item col-4">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHsSURBVHgB7drhTcNADMVxBzFIN6GMwASwAhu0k5ARygYdgQ3IJuGeRKWoQifgavvZ8k+q+P7Xay8hESmllFKKj0kUreu6b3924muZpuksSu5F10v7PIuvR1F0J7mdNdcH2QMeRVnmgOrrg8wB1dcHWQOarA+yBjRZH2QMaLY+yBjQbH2QLaDp+iBbQNP1QaaA5uuDTAHN1wdZArqsD7IEdFkfZAjotj7IENBtfRA9oOv6IHpA1/VB5IDu64PIAd3XB1EDUqwPogakWB9EDEizPogYkGZ9EC0g1fpA+82EW5vWdX2Tv3lv0U+iJFrAh+/Pby2i/JVP/2ZCW98iijIHxFtZsyjLHPBJDGQNOLf1fYiBejNhUMoH69oHx1a2gDg4DmKoHqwPYnnJHO9R72XMqa3P5OSl00LP67idOMjyFZ4tD46tDAEXqQfrQ45e64PoAU3ud3uiB3Q/dSMHNLvf7annwoPCPtb0PDi2IgY0v9/tqceag6IFPHlftlyLFvBVyEQKOLMcHFtRAi5C9tt3ESUgzWXLtQgB3e93eyIEpP4vM3tAivvdHvaAlAfHFnNA2oODzg8PlT4lCNYF0n91LxgD0t3v9jAGpLvf7WELSHm/28MUcJFAv30XTAHrsuW/2mXLQUoppZRSiqUvQpqvDQE+QnoAAAAASUVORK5CYII=" alt="flash on">
+              <h4>快速</h4>
+              <p>我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。</p>
+            </li>
+            <li class="service_item col-4">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANrSURBVHgB7ZyNbdswEIXPnSAjqBt0BI+QDaoNmg2qTtB0AmWDpBMoG7QbKJ0g2eCVBCn4T6JEiqSO9n0A4QBJbPrp8eeOJxEJgiCUCYAvJIShxKtU60kIQ4n3BMOeBD+s+wY6Evw4ch/EhZ5Y972fCSguXIoSq8Y4FQnz6JV3QsBHEtw43Ac7rO9IGEcvFA73DfwsYijbiTzL1bbCdfCjZS0kzDaioUToi2OHa4d1tOC2xbFfrkeCOce+93dcblPW0qlWEwdwOpE3FAn7vrGFO6fH1gkInE7k7xQRK2KPNDxj6+GM8W3EPUUGZuF4xnq0oxtw2d5g3B3JwiiY1f4J/vASTgPjiin2lJAjIefmyL8wo4Tfhlp16sXR8SzBvHWVi4o4gtP82yYutP24c7gw6CJ+ojw0C/7mKyVmt9t9qJffE7/+RRxZ6D4gUzCP8bmY79kI/FbBhjKAyxCvJo7gELYtZQsXsnZfDX8aysCRC2viCsLCqqjhnaNv99bxFXEk0H0D0cO7iT7yTeNjXVB/26dkK903UNOtATOvdIhHf/VCIl0W+EJIXNOpWSbhxoRsUfIhOMwmdElqKDUtShISYceDOdg+1e4C8ReGVPRgdHK2xfwWix4ZF5zduXDq5ZtqD6qVvuK9qfaq2g+VB3yjRJwnVLVon1X7oPLR3+UfbfFdcCiN6FEe7I4iSxGyQ6YkRBCId1gdmw4l1Tgj/LA6JnqYtii5OBwHIXvkg1/FwFqQZ8G5PuHGSCBkB84LQyogCdX1YF38LDcBwiQhWLsP3F2OsGREFvfhUBLMd2HCfDnZlu7r7ec1xBW4y8lG3Yf8pR2rXJi0vM2Wk/mUjb3a/0nNw9HPWjzWMbSPCytKDMbL7Xgf5GNZ7NxSBhx92RNX4C4w39p9xbiwc3T+hTKA+ZGwJ65g29sclh6S9WBeL9iNdZoSgfAigB5mo10RJzAe3tUUGcQrAhgStxVxAaduiOo+pC0CaFkIidPwrqZIqPd6xI3c7jpsrHVnYt9wrbcpKbLjHTit0DAuTLpxjiRkx0q4ARgXVpQB+M+LenQ8oqTSuRzADO8/M+Jp4eTZMVNg/qymImEauDNDWZIZxYPpLHlFwjwTLhT3+TDiwj0Jy7EuHJCHL4aAw0MwahL8gX0cHgnhQB7ELQi3zn+bmJL7imAY2QAAAABJRU5ErkJggg==" alt="auto awesome">
+              <h4>靈活</h4>
+              <p>我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。</p>
+            </li>
+            <li class="service_item col-4">
+              <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIoSURBVHgB7ZztVcIwFIYvHgfACcQJlAmEDWQCyyTqJK0T6AaWCWQDuwFuUG8k/DMB+ibEhPc55578SE4LD7fcNP0QIYQQQkgaRhKZvu/H2kw07uT/02msR6PRt6TGiNN40tj0+VFrTA75nlEy0O78XeNW8sVk4UKzsfUNiiVwLXnL22EkTlVi5xpwIYFReZWUIc9g/r9r34DgGagCP7SZSVlcuQpL8AyUPKrtscxcHTEEjqU8nN8phsCzggJBLiUvVhpfjr5KEpCbwEarYfNXh50+nRwewiAUCOIUaA4Jz8l2JeQXZiAIBYJQIAgFglAgCAWCUCAIBYJQIEiyxQRdFAh6OWHI9vSMqtHmUQCYgSAUCEKBIBQIQoEgyarwwDXF1nWbxcDtXQtIymsitRzPUqMJuD0YHsIgFAhCgSAUCEKBIBQIQoEgFAhCgSAUCEKBIBQIkpvA2nW7mCSCGQhCgSAUeBjOx19jCOykPE4qcCVl0fkeeY0hsJGyePV1Bhdof60XKQOTfc++AVGKiN1p7hJbjfm+QdGqsJV4I9tDoJM8MMWi1Vjq55/7nlTfEfWypv0AlRQM54EgFAhCgSAUCEKBIEOr8H3CJTgI1wPbg7fn6lBBD9q8SWEEv7nd1dFv37q2kcIILfDCs6PdrJx48P4a9i1sn1LQy3ROloF2Z502C/EsKJ47e6cxdnlqKnvWxc6Vo9LZFhbzcrGJZEroaQwhhBBCUvEDxQZUacjMYbgAAAAASUVORK5CYII=" alt="library add">
+              <h4>擴充</h4>
+              <p>我們的服務支持多種擴充選項，可以滿足您的不斷增長的 AI 需求。</p>
+            </li>
+          </ul>
+        </section>
+        <section class="from_a_partner">
+          <h3 class="col-4">來自合作夥伴</h3>
+          <div class="bgimg">
+            <ul class="img_list_1">
+              <li class="img_item"><img src="/RocketCamp_Week2_AiTool/assets/enterprise-e6d04cc3.png" alt="enterprise"></li>
+              <li class="img_item"><img src="/RocketCamp_Week2_AiTool/assets/enterprise1-b6ad9429.png" alt="enterprise1"></li>
+              <li class="img_item"><img src="/RocketCamp_Week2_AiTool/assets/enterprise2-bc475bef.png" alt="enterprise2"></li>
+              <li class="img_item"><img src="/RocketCamp_Week2_AiTool/assets/enterprise3-7a514f69.png" alt="enterprise3"></li>
+              <li class="img_item"><img src="/RocketCamp_Week2_AiTool/assets/enterprise4-472c7ebb.png" alt="enterprise4"></li>
+              <li class="img_item"><img src="/RocketCamp_Week2_AiTool/assets/enterprise5-0e17278d.png" alt="enterprise5"></li>
+              <li class="img_item"><img src="/RocketCamp_Week2_AiTool/assets/enterprise6-1b14bdf5.png" alt="enterprise6"></li>
+              <li class="img_item"><img src="/RocketCamp_Week2_AiTool/assets/enterprise1-b6ad9429.png" alt="enterprise1"></li>
+            </ul>
+            <ul class="img_list_2">
+              <li class="img_item"><img src="/RocketCamp_Week2_AiTool/assets/enterprise7-0a05f31d.png" alt="enterpris7"></li>
+              <li class="img_item"><img src="/RocketCamp_Week2_AiTool/assets/enterprise8-2aaa0a94.png" alt="enterprise8"></li>
+              <li class="img_item"><img src="/RocketCamp_Week2_AiTool/assets/enterprise9-3e753b9c.png" alt="enterprise9"></li>
+              <li class="img_item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKAAAAAoCAYAAAB5LPGYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAA24SURBVHgB7Vt9cFzVdT/33rdPqw9Lq9VKXmm1RoI4GMfgQKkhbjJxxzBmMjSTlBKaQickHUombdKh6UzbCSk0H/SLTEtKp+SPDuNOS4lJndI2lCYtMdRQTCAYIxvH30Zafa2k/dBK2o9378nv7q6UtRM7KxxZEnm/mfV7775z7z3v3t8995xzZSIfPnz48OHDhw8fPnz48OHj5wWCVhiYWQxls+0mpze6ARkjKYOGuUSGJwJCnOjqajtGPt42WFEETCQSTTLY/Csg4c3EYgOKukBJl4k8QTILdg4LRfvxbld3pO175GPVY8UQcHAwE1aNdB9ubwQB3wHFAucQzUHt56RLX4i2te0jH6saS0bAxNTUOlFS2wRxdz3y7Ih3Y5v9EG6DdUjn8c/3sD1/uaej7b/Jx6qFQ0sEQc4lLPiTuLmyrgqGg/XrI6zs+4jpDxKJ1Hgs1v4q+ViVWDICaq2VEqIRty20SMDny8A0/0B7ZreU/KpQbguzvlUw3QBCRxbkmN+vGsRHkkk+1tkppsnHqsOSEfACgIBDPCo8+UC8O5SsKd+dSKZ/Hde/BzlDtsD6iSDrtoLOPonHF8nHqoOkiwj4gzmYt1MLP+JRmLH8WVJHdL70YHf3muTZ9WOdoccRAf9bbRmsYJ90RDeuF/VbFouhycnekZFU38DAgEs+FnBxLSDTd0CUf/zRs7yGFH8cW2vvQhHTM/F4JHHONmTpL5id238UJYsoGx0/deqUndgFMg8MsBsKpTeya6LKcWf1jBmIx9umaBlwEsSTRn6RlDHhru5/QdHT5KOMi0tAIY7HukILFiwxliLB4qNniBAdP18TsUjk8MhEeg5EXUjTSKECMzPNZ3xLd/dUMG/U7ZLVr5E2Q6pZfg7Fz9EyICD0ZfiyO1iIOQx5inwCLmB5fUBHzJKG1apJBglB7eerkkhkI4ZNY23+yLAuNTfPeLVyWSmlq7kTDfZZs6pQh5YJLANvQsevY6GUNOtvk48FLCsBjeeMKulN1pYxme1ISj90zu3S5d89I0nNNCWkSPT19RWoTkxMTGwoCrWDjOwTzEUhxIFSnv7r7D5HJjJbSPMvY1nkJKm9JVFC1+rd9p1j9LOPPPLQ6fvuu4/H0uk+wwLt0SXC+tVGvuEVMv8ej8enFrQkNYCFYBgfPD6eixZ18VpSTkQJTrYEW1/KFadvJs90wZNNK+O8uHZty2u1+haEu1UYvpKJtZA8qDzxn2vXhsq7xfBk5iajRbSil3gqGl0znshmI1SgrVh7YdvHbFbvDYbkdaxljxBcpKLeyy5dpYR8H1ygYwHpPt3R0TR4enzqvQGpbkI/AUniG0t94rSsBPTc0pvCo0F8qMajKheyuNwN0mdSqdTftLe3p2vlE2PZX0Igc/cZjQgxioR0EiTievocm8ztKBrvj3DkfDk6s1bRYLAnZKPYmszmv9rZGvyBlRtNZj5qiO4lyWF7FMjkvYwoZxbiW8u6K/4MyDc4lMz2Kyn/Fm1tBAGbrRJYRCkn2HrL2FT2z7va1+wbTabeyUL+lq3naO4ySmeVUHdDbhPk98/kM7/KAikmCUqwyGvlvTyWyn1pbXvLa/P6Cjbv4EpKC9XEtFb0gdFk9uFoZ+t/oN+PSWGut+2j/AAu41Qw6zCudyMXuxE7zCstLfKwNuLjAnJYJNPkyqfR3i1sKIS+00VT3DAykUVd80n46eshozEuvwBy/9VSJvuXlYB9oVBmeCLzLaRdtvP8iQnyfJrMPXlPxIfHp3eaYvGEDPIaQ86HMQl3QSJa2wYI+ZyZ40P19DcIi6bZ+wJut6DeLCZ7L5xQm1e8RhizrlTMD2OL/xqr4lWG+UsovxQ9eJjyLPy363ANw0VosG0pDjSVr5IfQ7m1ih6UOYxlYF2Kq/A9/VpTKJlM3mqE04oJ7avoK9tKxgQVCRt4WfcgaoSUuL6Jt+vK7ohBGenRxOTkX2rtfRZl22xdNuKvsc7aYGM/BLHtRpjc2Fj6kCaOUrV9JXUlymbTBNL32HLUG/I8ERAul/vkiiIx9NlIlVxt2JANBg3WHJfwsqM6ZNthdU8fPXp0z/r16+veYRaDZU1dWKtl8tNPsjDfwYCYmjetGKRPwDA+KxvUIM7pDkmmL1N1kKuA1eTntRY7Y7HWiXr6U4ZvwJb0znIPRjzY09W2Q3h8C56egjJBvPuYDPAWKZ0bQUw7qSAVP65Mfp0x+iaQ7/9r2xsey2wD+a6tPPFLOi+2u0rvwKDavCQu/N6SDF730/SSgj+Are4Kqc0H8Zip6AI9tLoOrbRVxZDC8nbJQMMX8SW/DYf3XtDl654nM7R45ATLB7g4G5FC2HEtwAi0GzLfKDh0BRyFD9fI9rS0ROo6Tn0rWPbcGfykOY0UBSyGTSR79dfkUfgvX+uNttWfgJYUh+VYU7k3e+ylsVFksBBet/d4FxcOtQtJa5lEAAVZ9uiJaDQ609vV/oYU8oUzmlOy7A9y+Q8k5PetD9nR0ZFFXbuNT1faNBvPpxJk90tTPAgdPK2cI2hnf/VVSAuTh06vYmFMoaEmKdWz7OW/hVOh2wJGzKD2kVTqzSwtHnmPSwdjsdisEWTzraXy97A4TOl0XhraTxcJKyJ5G+9qO8ae/jwGeQ+ImK6jirETk02N76JFABNpt6fyN3t2YwVmZmaw+k3FighyYVUk5GyUjV0arp6N1IEnnnjCeMY74483sPXp6q2VVfPlIFMRjZctOtprPZ9OsKrunBBlnbiAjbPaJOojv+7OedL5O2j8JArsefcwfuugxK3o+0H4nvdEIr29Z+ik9Uo83TonVoyyvdHIM/C/DkiXPwUS3oAJsBFlBGRowiRZy2gneJ4AmFeRW6xfIhSNIpwo2C0OU34NivbABEYQQW4sTznTELakLCKOUWyL1irA9+RtiFoHCiZ/Cc62N9dGOvATh6XVCISFRY2fTKVCbdg7C5otScq+GJR+1ZxvoQvqc0RgE+rOOkyXGyP6rSrYEkexyhwqlCJGmV2wTq+AneNCqi2I+m+G97IBXb0HbV+K8SmhjlUN3qSzGRHwYc6bHujQRiscK2q1WF8Og/rA2Fhqt1ZyE8xKDI60jfwwkOY2jG8PXQCMNi8g+rwNc3UZrNSdifEpV2iF7RbOdkXk2yXDB0GaAoh/ByYWzrj4zRKVeh2lsBjEltqcZUDzPg6IQbt1I9l3faBo/mQO4Sgiih14DedeHDIl8Rrs6tXnVIqpGWS73y3x943gzShZRxX/9rAu5lMq4PwhGXU1otlpOItfEayPgtbz226GA3pGaDmCIMkrn42z+h1RMJtBUhvgdNIKx4oz19YXwmWg+isjkZjYIFwH+Th6CwS06Rl4TWi15IrnZck8jLTNPZisd+H4+E8rfUKIaZ/x+J/hU55KJmlUi+zDqPhpECQupbgdpH0e969AfMd8y9FoaGh0cvrzeHcvHi+D3KfRGtIXyFaS2Y/F9JCg2UFw8eqKHlQbaVXBJ3AaNAHb9anqAJRg6Q4a9p7y8h0HlDv9NLS/Fv7mu2Bx/wxGsQjLGLO5O0g/BpYfnNX0KKz7VowdTlz4CnzbJbja8TsBH/NKmk9RwaxDgUqmaB663Ge1jM8at/JZ+5L+1fKq8hcWA3d2tkhO82NSwYknxrbqDvS3N6WPT009ivzJUaNt9Cr6MR9FbLtvYNK/m5lMHIp3t3tIhLswb7sdGTiEeUDagkekZ/Z7Uv6GrCFguR9R+qaWgeOeMe9HumM9SACfkhMszf80GPN6Jxz9kZHJ14VL91h5ZDpeqyUhrGoG/sQDASX2lJjXISFzGjP+bAOZI/F+kYe+u5qVOoAM9la4nJutpYOjN4gs3Xe1VgMdcQQ9zC+MTWbv8AzdKGzqSMgB5Lz3gDuXOopi2tOni0UaDTaof4Dr8a/ID07rWS4HXnBJnpeu+JzND2ldem7nzp3Fu+76/RzSS2V9vaI53ujykp2hv20J2NPTkx8eHt475za91GqM+b9nGmds+WXhcObkyZP/29TU+bIxpUaDc72GIKfDneEcIt0yN6TDNwpHfQL2qpU1v+AVCrtFU7ADx3mbK26omPS0N1a11pYALw5PTx+WM7rFtmfYmYnFwpnqe1jK8LFT6XTlDyyy6bzTErq+VldXFk4VG4JHuVgKNoAc4Ug4h7pmXl9c9sE/Pi6l+Sb6YqPVdG9va3a+fRv0zMvApDXpFpHrbW3LIgd5ZEYGHNebLfb19eShg00PUcHz9OW9kXJwVSikBqgxVP6PXt5UZu7+++83SLCnIbuzrJuZK4bDPXlaIlxUAhohIkOTk++hxUIr+EU2YVrXYUcZ1Qmcrf7OQH9/vx3Qcw4qspMvEqvPwvL9Irata5ymho8g4mjAZtRaPnER9Ih0G47X9GWJMFH9/SRdbLC0EDANJlM/JtPb2jpJ50E11zlRh0wtcmc9/1iG4SeNRfV76slGXDAuKgHhaN0pWN1Ji0XZCamffBeKnp7w6fHx8Q+WqOGP4TZtwjbZj60rA9v2lGb9eIb13k1dbbm32DwhSDhGAfEVzHQEB8cj4+P0ltta7XjbbsEXiq6urlFcfo+WAL29HUO4/BP5WBmJaB8/v1gyCyiNKuKMdwIR5gj9jIGcmM15XRQfxcfSYskIWBT5EwER/Ko2Okw/YyA4MC45J8iHDx8+fPjw4cOHDx8+fPjw4WPV4IfDv1sZJx8MbAAAAABJRU5ErkJggg==" alt="enterprise10"></li>
+              <li class="img_item"><img src="/RocketCamp_Week2_AiTool/assets/enterprise11-9f24c60f.png" alt="enterprise11"></li>
+              <li class="img_item"><img src="/RocketCamp_Week2_AiTool/assets/enterprise12-d3cd5964.png" alt="enterprise12"></li>
+              <li class="img_item"><img src="/RocketCamp_Week2_AiTool/assets/enterprise7-0a05f31d.png" alt="enterprise7"></li>
+            </ul>
+          </div>
+          <ul class="partner_list">
+            <li class="partner_item col-4">
+              <div class="star_box">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+              </div>
+              <p class="partner_feedback">非常喜歡 AI工具王 提供的 AI 模型租賃服務，使用起來非常方便，而且效果非常好。對於我們公司的業務來說，這個服務非常重要，因為我們需要大量的數據進行分析和預測，AI工具王 提供的 AI 模型能夠幫助我們節省大量時間和成本，實在是太棒了！</p>
+              <div class="partner_info">
+                <img src="/RocketCamp_Week2_AiTool/assets/avatar3-26d1474c.png" alt="avatar3">
+                <div>
+                  <h5>陳小姐</h5>
+                  <p>ABC科技有限公司</p>
+                </div>
+              </div>
+            </li>
+            <li class="partner_item col-4">
+              <div class="star_box">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+              </div>
+              <p class="partner_feedback">作為一家醫療器材公司，我們非常關注人工智能技術的應用，而 AI工具王 提供的 AI 模型租賃服務為我們帶來了很大的幫助。我們使用 AI工具王 的模型進行醫學影像分析和預測，這些模型非常精確，能夠幫助我們更好地診斷病情，提高治療效果。感謝 AI工具王 團隊的辛勤工作！</p>
+              <div class="partner_info">
+                <img src="/RocketCamp_Week2_AiTool/assets/avatar1-1ea64cca.png" alt="avatar1">
+                <div>
+                  <h5>陳小姐</h5>
+                  <p>ABC科技有限公司</p>
+                </div>
+              </div>
+            </li>
+            <li class="partner_item col-4">
+              <div class="star_box">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+              </div>
+              <p class="partner_feedback">我們銀行一直在尋找能夠幫助我們提高風險控制和客戶服務的解決方案，而 AI工具王 提供的 AI 模型租賃服務正好滿足了我們的需求。我們使用 AI工具王 的模型進行客戶信用評估和詐騙檢測等任務，這些模型非常準確，能夠幫助我們更好地控制風險，提高客戶滿意度。非常感謝 AI工具王 團隊的支持！</p>
+              <div class="partner_info">
+                <img src="/RocketCamp_Week2_AiTool/assets/avatar2-fa29e097.png" alt="avatar2">
+                <div>
+                  <h5>陳小姐</h5>
+                  <p>ABC科技有限公司</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+    
+    <!-- AI工具介紹 -->
+    <div class="bg-white">
+    <div class="container">
+     <section class="application">
+      <h2>這些超酷的應用，都來自 AI工具王</h2>
+      <div class="search_box">
+        <label for="search">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADJSURBVHgBzZLBDcIwDEXT5MKNskE2gBFYg1s3IBvABnQDGANOqBOUDUInKBuEZymHAkEpnGrpy7H8/1fsRKmpRam13oEehKIoWmNMNVZsEXlEnrMDFfVJjMQ0qxZyFNu3lhgF8jpn4IH70mtBnewNzpYbPFKkEEJHmucM7hBXKRLGS1KnMuHiwl7GoD5g0KvP3SSuw5zx+a7kozyniMGN8zalMcOCEc6ggbygnIEL9SaOUQPhNOqfwHQ/+k/kTH75nSkTWXKpJhNPD203LtF4dtwAAAAASUVORK5CYII=" alt="search">
+        </label>
+        <input type="search" name="search" id="search" placeholder="輸入關鍵搜尋">
+      </div>
+      <ul class="filter_box">
+        <li>
+          <a href="#" class="filter_button">
+            <span>篩選</span>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACCSURBVHgBzZJRDYAwDERvCwKQgAQkTApScABSsIACgoLhAAws0P4tZB3lB/aSJluuvfSSAn9jbv8OzxxUU0porbWnpqjXJa1JHBUGPbKZjFmkYdagoKFGnxj2rEGJU+eW4KyRwSD2SQKtvEXv9bWBlm8MQgi7pFWZIT5XPtuaakaxXF2/Noy0DB7OAAAAAElFTkSuQmCC" alt="Filter alt">
+          </a>
+        </li>
+        <li>
+          <ul class="option_list">
+            <li><a href="#" class="option_item active">全部</a></li>
+            <li><a href="#" class="option_item">聊天</a></li>
+            <li><a href="#" class="option_item">影像辨識</a></li>
+            <li><a href="#" class="option_item">翻譯</a></li>
+            <li><a href="#" class="option_item">行銷</a></li>
+            <li><a href="#" class="option_item">客服</a></li>
+            <li><a href="#" class="option_item">生產力</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="order_button">
+            <span>由新到舊</span>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABKSURBVHgB7YzBEQAQDAQvSQNK0bFS6EgLGMbglYnxs89cdoHPE5xx64hIZOZw3tuNiBIU+Pqc18iQc9ugZEYs8haxyjOCC/mjpADi4Qy/A7A9twAAAABJRU5ErkJggg==" alt="keyboard arrow down">
+          </a>
+        </li>
+      </ul>
+      <ul class="product_list">
+        <li class="product_item col-4">
+          <a href="#">
+            <img src="/RocketCamp_Week2_AiTool/assets/tool1-5c022ee4.png" alt="tool1">
+          </a>
+          <div class="card_title">
+            <h5 class="product_title">Chatbot Builder</h5>
+            <p class="product_introduction">建立智能化的聊天機器人，解答常見問題、提供客戶支援、收集反饋等。</p>
+          </div>
+          <div class="card_body">
+            <h6>AI 模型</h6>
+            <span>卡卡</span>
+          </div>
+          <div class="card_footer">
+            <span>#聊天</span>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD4SURBVHgB5ZThDYIwEIUf9I/+Y4SO4giOwAa6gWygTqCO4ASMgBvgBuAC1DtzJqWCIW1JTPySF2gLXO/xUuDvSdN0R2pEe8SEP0gyjgrEQnbtFmh6z8CfTPR9E/BAKZXTTuuR5QsCWCVJUrIVdGV7CtKB799jeJLRy2fL5xMm2DOIGztrzLsuuQv4MhK7lx20nCOUkdgZ+NqBaSlqQwooe0BWLPHp8YLm19TJwxhzQyhu7Fh0X4tdnH2NGdADMdWYAW13IxHe8Byp4jEikVuFXG0RCS1duAV6Z1TIaXofmqSktbEKoOu6oztH1l0RE4lxJf8kmv+/wxONiV0BoMDXAgAAAABJRU5ErkJggg==" alt="share">
+          </div>
+        </li>
+        <li class="product_item col-4">
+          <a href="#">
+            <img src="/RocketCamp_Week2_AiTool/assets/tool2-1870af5e.png" alt="tool2">
+          </a>
+          <div class="card_title">
+            <h5 class="product_title">Image Recognition Platform</h5>
+            <p class="product_introduction">專業的圖像識別平台，識別圖像、分類、標記等。
+            </p>
+          </div>
+          <div class="card_body">
+            <h6>AI 模型</h6>
+            <span>杰杰</span>
+          </div>
+          <div class="card_footer">
+            <span>#影像辨識</span>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD4SURBVHgB5ZThDYIwEIUf9I/+Y4SO4giOwAa6gWygTqCO4ASMgBvgBuAC1DtzJqWCIW1JTPySF2gLXO/xUuDvSdN0R2pEe8SEP0gyjgrEQnbtFmh6z8CfTPR9E/BAKZXTTuuR5QsCWCVJUrIVdGV7CtKB799jeJLRy2fL5xMm2DOIGztrzLsuuQv4MhK7lx20nCOUkdgZ+NqBaSlqQwooe0BWLPHp8YLm19TJwxhzQyhu7Fh0X4tdnH2NGdADMdWYAW13IxHe8Byp4jEikVuFXG0RCS1duAV6Z1TIaXofmqSktbEKoOu6oztH1l0RE4lxJf8kmv+/wxONiV0BoMDXAgAAAABJRU5ErkJggg==" alt="share">
+          </div>
+        </li>
+        <li class="product_item col-4">
+          <a href="#">
+            <img src="/RocketCamp_Week2_AiTool/assets/tool3-ff43f332.png" alt="tool3">
+          </a>
+          <div class="card_title">
+            <h5 class="product_title">Language Translation API</h5>
+            <p class="product_introduction">專業的語言翻譯 API，實現文本翻譯功能，支援多種格式的文本。
+            </p>
+          </div>
+          <div class="card_body">
+            <h6>AI 模型</h6>
+            <span>琪琪</span>
+          </div>
+          <div class="card_footer">
+            <span>#翻譯</span>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD4SURBVHgB5ZThDYIwEIUf9I/+Y4SO4giOwAa6gWygTqCO4ASMgBvgBuAC1DtzJqWCIW1JTPySF2gLXO/xUuDvSdN0R2pEe8SEP0gyjgrEQnbtFmh6z8CfTPR9E/BAKZXTTuuR5QsCWCVJUrIVdGV7CtKB799jeJLRy2fL5xMm2DOIGztrzLsuuQv4MhK7lx20nCOUkdgZ+NqBaSlqQwooe0BWLPHp8YLm19TJwxhzQyhu7Fh0X4tdnH2NGdADMdWYAW13IxHe8Byp4jEikVuFXG0RCS1duAV6Z1TIaXofmqSktbEKoOu6oztH1l0RE4lxJf8kmv+/wxONiV0BoMDXAgAAAABJRU5ErkJggg==" alt="share">
+          </div>
+        </li>
+        <li class="product_item col-4">
+          <a href="#">
+            <img src="/RocketCamp_Week2_AiTool/assets/tool4-14f5865c.png" alt="tool4">
+          </a>
+          <div class="card_title">
+            <h5 class="product_title">Sentiment Analysis API</h5>
+            <p class="product_introduction">自動識別文本中的情感傾向，包括正向、負向和中性等。適用於情感分析、社交媒體監控、市場調查等。</p>
+          </div>
+          <div class="card_body">
+            <h6>AI 模型</h6>
+            <span>昊昊</span>
+          </div>
+          <div class="card_footer">
+            <span>#行銷</span>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD4SURBVHgB5ZThDYIwEIUf9I/+Y4SO4giOwAa6gWygTqCO4ASMgBvgBuAC1DtzJqWCIW1JTPySF2gLXO/xUuDvSdN0R2pEe8SEP0gyjgrEQnbtFmh6z8CfTPR9E/BAKZXTTuuR5QsCWCVJUrIVdGV7CtKB799jeJLRy2fL5xMm2DOIGztrzLsuuQv4MhK7lx20nCOUkdgZ+NqBaSlqQwooe0BWLPHp8YLm19TJwxhzQyhu7Fh0X4tdnH2NGdADMdWYAW13IxHe8Byp4jEikVuFXG0RCS1duAV6Z1TIaXofmqSktbEKoOu6oztH1l0RE4lxJf8kmv+/wxONiV0BoMDXAgAAAABJRU5ErkJggg==" alt="share">
+          </div>
+        </li>
+        <li class="product_item col-4">
+          <a href="#">
+            <img src="/RocketCamp_Week2_AiTool/assets/tool5-af2e4e0c.png" alt="tool5">
+          </a>
+          <div class="card_title">
+            <h5 class="product_title">Fraud Detection Platformr</h5>
+            <p class="product_introduction">預防詐騙活動，適用於銀行、金融、電商等。
+            </p>
+          </div>
+          <div class="card_body">
+            <h6>AI 模型</h6>
+            <span>卡卡</span>
+          </div>
+          <div class="card_footer">
+            <span>#客服</span>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD4SURBVHgB5ZThDYIwEIUf9I/+Y4SO4giOwAa6gWygTqCO4ASMgBvgBuAC1DtzJqWCIW1JTPySF2gLXO/xUuDvSdN0R2pEe8SEP0gyjgrEQnbtFmh6z8CfTPR9E/BAKZXTTuuR5QsCWCVJUrIVdGV7CtKB799jeJLRy2fL5xMm2DOIGztrzLsuuQv4MhK7lx20nCOUkdgZ+NqBaSlqQwooe0BWLPHp8YLm19TJwxhzQyhu7Fh0X4tdnH2NGdADMdWYAW13IxHe8Byp4jEikVuFXG0RCS1duAV6Z1TIaXofmqSktbEKoOu6oztH1l0RE4lxJf8kmv+/wxONiV0BoMDXAgAAAABJRU5ErkJggg==" alt="share">
+          </div>
+        </li>
+        <li class="product_item col-4">
+          <a href="#">
+            <img src="/RocketCamp_Week2_AiTool/assets/tool6-3f0146e0.png" alt="tool6">
+          </a>
+          <div class="card_title">
+            <h5 class="product_title">Voice Assistant SDK</h5>
+            <p class="product_introduction">通過語音控制應用程式、設備，實現多種功能，例如播放音樂、查詢天氣、發送信息等。</p>
+          </div>
+          <div class="card_body">
+            <h6>AI 模型</h6>
+            <span>杰杰</span>
+          </div>
+          <div class="card_footer">
+            <span>#生產力</span>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD4SURBVHgB5ZThDYIwEIUf9I/+Y4SO4giOwAa6gWygTqCO4ASMgBvgBuAC1DtzJqWCIW1JTPySF2gLXO/xUuDvSdN0R2pEe8SEP0gyjgrEQnbtFmh6z8CfTPR9E/BAKZXTTuuR5QsCWCVJUrIVdGV7CtKB799jeJLRy2fL5xMm2DOIGztrzLsuuQv4MhK7lx20nCOUkdgZ+NqBaSlqQwooe0BWLPHp8YLm19TJwxhzQyhu7Fh0X4tdnH2NGdADMdWYAW13IxHe8Byp4jEikVuFXG0RCS1duAV6Z1TIaXofmqSktbEKoOu6oztH1l0RE4lxJf8kmv+/wxONiV0BoMDXAgAAAABJRU5ErkJggg==" alt="share">
+          </div>
+        </li>
+      </ul>
+      <!-- paging -->
+      <ul class="page_list">
+        <li class="page_item"><a href="#" class="active">1</a></li>
+        <li class="page_item"><a href="#">2</a></li>
+        <li class="page_item"><a href="#">3</a></li>
+        <li class="page_item"><a href="#">4</a></li>
+        <li class="page_item"><a href="#">5</a></li>
+        <li class="page_item">
+          <a href="#">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABWSURBVHgB7ZHRDcAgCEThWMBRunG7STtKN9AN8BYgGo1f+hJCQrgjF0QOEcnMPvartYhgXtz9B/D2mMTuwMPKS03Q4cE0LkPw8q2qYxGmxCRRPPeBjajK5hLya0zYxAAAAABJRU5ErkJggg==" alt="keyboard arrow right">
+          </a>
+        </li>
+      </ul>
+     </section>
+  </div>
+</div>    
+    <!-- 現在就來建立屬於你的服務吧 -->
+    <div class="container">
+      <section class="getYourOwnService">
+        <h5>現在就來建立屬於你的服務吧</h5>
+        <a href="#" class="start_button">
+          <span>開始使用</span>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABnSURBVHgB7Y/LCQAhDAWfW0n6b2JLsRQ3hxwW8RNMBBUHcglhhgCX4wmao8Ro7gKT7x6sCj9FPDH9gBeZPLoGCnJyC5TksrcHanKXQEtuDvTkpoBGPhzQyofYVy6Bd5pcAiQRwuUIPr5SF55LZjLyAAAAAElFTkSuQmCC" alt="call made">
+        </a>
+      </section>
+    </div>
+    <!-- footer -->
+    <div class="container">
+      <footer>
+    <div>
+        <h2>首頁定價</h2>
+        <a href="#">
+            <img src="/RocketCamp_Week2_AiTool/assets/logo-46d6a116.png" alt="logo">
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><span>AI工具王 © 2023</span></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+        <a href="#">
+            <p>
+                Back to top
+            </p>
+            <span>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB/SURBVHgBzY7RDYAgDEQL8V83cBYmlU10A91A3IAN8IhgUAGjfsglL23S3rVERcsY01jojZx5AuPjkMDslQxhMTPKAGqg3E4LNBCMMR3u84xZgAXMrrez/vwJT5lxSe1vbn005PCBvxaaIyGXWVK4JEGX2+H0Uf8HVDdzScVrBTC1UGTUzXLmAAAAAElFTkSuQmCC" alt="arrow_up">
+            </span>
+        </a>
+    </nav>
+</footer>    </div>
+   
+    
     
   </body>
 </html>
