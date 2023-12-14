@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;700;900&family=Roboto&family=Rubik+Bubbles&family=Shadows+Into+Light&family=Silkscreen&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/RocketCamp_Week2_AiTool/assets/main-ef5db72f.js"></script>
-    <link rel="stylesheet" href="/RocketCamp_Week2_AiTool/assets/main-a26db840.css">
+    <!-- google font cdn -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;700;900&family=Roboto&family=Rubik+Bubbles&family=Shadows+Into+Light&family=Silkscreen&display=swap" rel="stylesheet">
+
+<!-- swiper cnd -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />    <script type="module" crossorigin src="/RocketCamp_Week2_AiTool/assets/all-e9efd329.js"></script>
+    <link rel="stylesheet" href="/RocketCamp_Week2_AiTool/assets/all-fcc686b4.css">
   </head>
   <body>
     <!-- header -->
@@ -69,7 +72,7 @@
           </ul>
         </section>
         <section class="from_a_partner">
-          <h3 class="col-4">來自合作夥伴</h3>
+          <h3 class="">來自合作夥伴</h3>
           <div class="bgimg">
             <ul class="img_list_1">
               <li class="img_item"><img src="/RocketCamp_Week2_AiTool/assets/enterprise-e6d04cc3.png" alt="enterprise"></li>
@@ -91,6 +94,7 @@
               <li class="img_item"><img src="/RocketCamp_Week2_AiTool/assets/enterprise7-0a05f31d.png" alt="enterprise7"></li>
             </ul>
           </div>
+          <!-- width > 768px 時顯示 partner_list-->
           <ul class="partner_list">
             <li class="partner_item col-4">
               <div class="star_box">
@@ -121,8 +125,8 @@
               <div class="partner_info">
                 <img src="/RocketCamp_Week2_AiTool/assets/avatar1-1ea64cca.png" alt="avatar1">
                 <div>
-                  <h5>陳小姐</h5>
-                  <p>ABC科技有限公司</p>
+                  <h5>劉小姐</h5>
+                  <p>XYZ 醫療器材有限公司</p>
                 </div>
               </div>
             </li>
@@ -138,12 +142,74 @@
               <div class="partner_info">
                 <img src="/RocketCamp_Week2_AiTool/assets/avatar2-fa29e097.png" alt="avatar2">
                 <div>
-                  <h5>陳小姐</h5>
-                  <p>ABC科技有限公司</p>
+                  <h5>黃先生</h5>
+                  <p>EFG 銀行</p>
                 </div>
               </div>
             </li>
           </ul>
+          
+          <!-- width < 768px 時顯示 swiper -->
+          <!-- Slider main container -->
+          <div class="swiper myswiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="star_box">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                </div>
+                <p class="partner_feedback">非常喜歡 AI工具王 提供的 AI 模型租賃服務，使用起來非常方便，而且效果非常好。對於我們公司的業務來說，這個服務非常重要，因為我們需要大量的數據進行分析和預測，AI工具王 提供的 AI 模型能夠幫助我們節省大量時間和成本，實在是太棒了！</p>
+                <div class="partner_info">
+                  <img src="/RocketCamp_Week2_AiTool/assets/avatar3-26d1474c.png" alt="avatar3">
+                  <div>
+                    <h5>陳小姐</h5>
+                    <p>ABC科技有限公司</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="star_box">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                </div>
+                <p class="partner_feedback">作為一家醫療器材公司，我們非常關注人工智能技術的應用，而 AI工具王 提供的 AI 模型租賃服務為我們帶來了很大的幫助。我們使用 AI工具王 的模型進行醫學影像分析和預測，這些模型非常精確，能夠幫助我們更好地診斷病情，提高治療效果。感謝 AI工具王 團隊的辛勤工作！</p>
+                <div class="partner_info">
+                  <img src="/RocketCamp_Week2_AiTool/assets/avatar1-1ea64cca.png" alt="avatar1">
+                  <div>
+                    <h5>劉小姐</h5>
+                    <p>XYZ 醫療器材有限公司</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="star_box">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACYSURBVHgBvVOJDYAgDGycwBEYoSMwgiMwAqO4gaPgBo6AGzBCLZFEonxq9JJLCO1d2lIAvgQRCWZfyumgjIGp4UUFlungCVio6MBwR+j7RuYSGRim9LGcSIZyW+Fz5dkEG018DpbKtxWxgMoMsGBwEaf2QOTtAVsMZHSemWsmlgbtT+aYOrpToX/TYjBRYv/DgEeq/I3/sQEOAgpw+ro2CwAAAABJRU5ErkJggg==" alt="star">
+                </div>
+                <p class="partner_feedback">我們銀行一直在尋找能夠幫助我們提高風險控制和客戶服務的解決方案，而 AI工具王 提供的 AI 模型租賃服務正好滿足了我們的需求。我們使用 AI工具王 的模型進行客戶信用評估和詐騙檢測等任務，這些模型非常準確，能夠幫助我們更好地控制風險，提高客戶滿意度。非常感謝 AI工具王 團隊的支持！</p>
+                <div class="partner_info">
+                  <img src="/RocketCamp_Week2_AiTool/assets/avatar2-fa29e097.png" alt="avatar2">
+                  <div>
+                    <h5>黃先生</h5>
+                    <p>EFG 銀行</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
         </section>
       </div>
     </div>
@@ -310,7 +376,7 @@
     <!-- 現在就來建立屬於你的服務吧 -->
     <div class="container">
       <section class="getYourOwnService">
-        <h5>現在就來建立屬於你的服務吧</h5>
+        <h5>現在就來建立<br class="display_md_no">屬於你的服務吧</h5>
         <a href="#" class="start_button">
           <span>開始使用</span>
           <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAABnSURBVHgB7Y/LCQAhDAWfW0n6b2JLsRQ3hxwW8RNMBBUHcglhhgCX4wmao8Ro7gKT7x6sCj9FPDH9gBeZPLoGCnJyC5TksrcHanKXQEtuDvTkpoBGPhzQyofYVy6Bd5pcAiQRwuUIPr5SF55LZjLyAAAAAElFTkSuQmCC" alt="call made">
@@ -320,31 +386,39 @@
     <!-- footer -->
     <div class="container">
       <footer>
-    <div>
-        <h2>首頁定價</h2>
-        <a href="#">
-            <img src="/RocketCamp_Week2_AiTool/assets/logo-46d6a116.png" alt="logo">
-        </a>
+    <div class="footer_title">
+        <ul class="nav_list">
+            <li class="nav_item"><a href="index.html">首頁</a></li>
+            <li class="nav_item"><a href="pricing.html">定價</a></li>
+        </ul>
+        <img src="/RocketCamp_Week2_AiTool/assets/logo-46d6a116.png" alt="logo">
     </div>
     <nav>
-        <ul>
-            <li><span>AI工具王 © 2023</span></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-        </ul>
-        <a href="#">
-            <p>
-                Back to top
-            </p>
-            <span>
-                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB/SURBVHgBzY7RDYAgDEQL8V83cBYmlU10A91A3IAN8IhgUAGjfsglL23S3rVERcsY01jojZx5AuPjkMDslQxhMTPKAGqg3E4LNBCMMR3u84xZgAXMrrez/vwJT5lxSe1vbn005PCBvxaaIyGXWVK4JEGX2+H0Uf8HVDdzScVrBTC1UGTUzXLmAAAAAElFTkSuQmCC" alt="arrow_up">
-            </span>
-        </a>
+        <div class="nav_head">
+            <span>AI工具王 © 2023</span>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+            </ul>
+        </div>
+        
+        <div class="nav_foot">
+            <a href="#">
+                <p>
+                    Back to top
+                </p>
+                <span>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB/SURBVHgBzY7RDYAgDEQL8V83cBYmlU10A91A3IAN8IhgUAGjfsglL23S3rVERcsY01jojZx5AuPjkMDslQxhMTPKAGqg3E4LNBCMMR3u84xZgAXMrrez/vwJT5lxSe1vbn005PCBvxaaIyGXWVK4JEGX2+H0Uf8HVDdzScVrBTC1UGTUzXLmAAAAAElFTkSuQmCC" alt="arrow_up">
+                </span>
+            </a>
+        </div>
     </nav>
 </footer>    </div>
-   
     
+    
+    <!-- Scrool swiper 輪播套件 -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>    <script src="../assets/js/swiper.js"></script>
     
   </body>
 </html>
