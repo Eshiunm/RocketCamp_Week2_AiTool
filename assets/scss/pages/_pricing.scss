@@ -1,0 +1,303 @@
+.title{
+    margin-bottom: 160px;
+    h1{
+        font-size: $fs-30;
+        line-height: 1.2;
+        font-weight: 900;
+        margin-bottom: 80px;
+        @include pad{
+            font-size: $fs-12;
+            margin-bottom: 64px;
+        }
+    }
+    div{
+        display: flex;
+        justify-content: end;
+    }
+    p{
+        font-size: $fs-12;
+        font-weight: 900;
+        margin-bottom: 238px;
+        @include pad{
+            font-size: $fs-7;
+            width: $col-pc-9;
+        }
+        @include mobile{
+            margin-bottom: 258px;
+        }
+    }
+    .motin{
+        display: flex;
+        justify-content: start;
+        overflow: hidden;
+        .img_1{
+        @include animation_moveUp(linear,4s,.4s,infinite)
+        }
+        .img_2{
+        @include animation_moveUp(linear,4s,.2s,infinite)
+        }
+        
+        .img_3{
+        @include animation_moveUp(linear,4s,0,infinite)
+        }
+        @include pad{
+        img{
+            width: 117px;
+            height: 117px;
+        }
+        }
+        @include mobile{
+            margin-bottom: 62px;
+            justify-content: center;
+        }
+    }
+}
+
+.pricing_card{
+    margin-bottom: 160px;
+    @include mobile{
+        margin-bottom: 120px;
+    }
+    h2{
+        margin-bottom: 80px;
+        font-size: $fs-8;
+        font-weight: 900;
+        @include mobile{
+            font-size:$fs-5;
+            margin-bottom: 24px;
+        }
+    }
+    .pricing_list{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        
+    }
+    .pricing_item{
+        border: 1px solid $black-80;
+        border-radius: 16px;
+        margin-bottom: 24px;
+        &:hover{
+            border: 1px solid white;
+        }
+        @include mobile{
+            width: $col-pc-12;
+        }
+    }
+    .pricing_card_content{
+        color: white;
+        padding: 20px 0 0 32px;
+        height: 254px;
+        h3{
+            font-size: $fs-8;
+            font-weight: 900;
+            margin-bottom: 12px;
+        }
+    }
+   
+    .tool_features{
+        list-style: disc;
+        padding-left: 32px;
+    }
+    .pricing_card_footer{
+        padding: 20px 32px;
+        border-top: 1px solid $black-80;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .token_price{
+        font-size: $fs-5;
+        font-weight: 900;
+        color: white;
+        + span{
+            color: $black-60;
+        }
+    }
+    .start_use{
+        font-weight: 700;
+        margin-right: 12px;
+    }
+}
+
+.rule{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 160px;
+    @include pad{
+        flex-direction: column;
+        .rule_list{
+            width: $col-pc-12;
+        }
+    }
+    @include mobile{
+        margin-bottom: 120px;
+    }
+    h2{
+        margin-bottom: 80px;
+        font-size: $fs-8;
+        font-weight: 900;
+        @include mobile{
+            font-size:$fs-5;
+            margin-bottom: 48px;
+        }
+    }
+    
+    .rule_item{
+        border-bottom: 1px solid $black-80;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        h3{
+            font-size: $fs-12;
+            font-weight: 900;
+            margin-bottom: 24px;
+            @include pad{
+                font-size: $fs-8;
+            }
+        }
+        p{
+            font-size: $fs-8;
+            font-weight: 400;
+            @include mobile{
+                font-size: $fs-4;
+            }
+        }
+    }
+}
+
+.FAQ{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 160px;
+    @include pad{
+        flex-direction: column;
+    }
+    .question_list{
+        @include pad{
+            width: $col-pc-12;
+        }
+    }
+    .question_item{
+        margin-bottom: 16px;
+        &:hover{
+            border-color: white;
+        }
+    }
+    h2{
+        margin-bottom: 80px;
+        font-size: $fs-8;
+        font-weight: 900;
+        @include pad{
+            margin-bottom: 48px;
+            font-size: $fs-5;
+        }
+        @include mobile{
+            margin-bottom: 24px;
+        }
+    }
+    /*---------------------------- 收合效果起始線 ----------------------------*/
+    details{
+        max-height: 4rem;/* 先將 details 的最大高度設定的跟設計稿一樣高 */
+        overflow: hidden;/* 因為已將details的預設設定為open， 且details高度上面已經設定好了，所以超過高度以外的東西都先隱藏*/
+        /*  
+            針對「max-height」這個屬性的「變化過程」做轉換上的設定，
+            用 0.3s 的時間將 max-height 的屬性值變為 300px ，變化方式為ease-in-out
+        */
+        transition: max-height .3s ease-in-out;
+        p{
+            color: black;
+            transition:  all .3s linear;
+        }
+
+        @include mobile{
+            max-height: 6rem;
+            padding-top: 16px;
+        }
+    }
+    /*若 checkbox 是打勾狀態(checked)則與之相鄰的 details 元素會被選到*/
+    input:checked + details {
+        max-height: 200px; /* 200px 這個數值沒有一定，只要高度足以讓展開的內容完整呈現就好*/
+        transition: max-height .3s linear;
+        p{
+            color: white;
+        }
+        @include mobile{
+            max-height: 330px;
+        }
+    }
+    summary{
+        display: block;/* 隱藏 summary 這個標籤的預設三角形圖案 */
+    }
+    label{
+        display: flex;
+        align-items: center;
+        color: #fff;
+        max-height: 4rem;
+    }
+    /*---------------------------- 收合效果終點線 ----------------------------*/
+
+    details{
+        border: 1px solid $black-60;
+        border-radius: 16px;
+        label{
+            font-size: $fs-5;
+            font-weight: 900;
+            padding: 20px 40px;
+        }
+        p{
+            padding-bottom: 20px;
+            padding-left: 9.7%;
+            padding-right: 20px;
+        }
+        img{
+            margin-right: 20px;
+            display: inline-block;
+        }
+        /*尚未展開文字之前，將減號 icon 隱藏*/
+        img[class='remove']{
+            // display: none; 
+            margin-left: -20px;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+            
+            transition: opacity 1s ease-out;
+        }
+        img[class='add']{
+            //display: none;
+            margin-left: 0px;
+            opacity: 1;
+            height: auto;
+            transition: opacity 1s ease-out ;
+        }
+        &:hover{
+            border-color: white;
+        }
+        
+    }
+
+    input:checked + details {
+        border-color: white;/*若checkbox有打勾，代表文字現在是伸展開來的狀態，外邊框變為白色*/
+         /*文字展開之後，將加號icon 隱藏、減號icon 顯示*/
+        img[class='add']{
+            //display: none;
+            margin-left: -20px;
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+        }
+        img[class='remove']{
+            // display: inline-block;
+            margin-left:0px;
+            opacity: 1;
+            height: auto;
+        }
+    }
+    input{
+        display: none;
+    }
+}

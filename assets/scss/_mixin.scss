@@ -1,0 +1,32 @@
+@mixin animation_moveUp($timeFuntion,$duration,$delay,$iteration-count){
+  animation-name: moveUp;
+  animation-timing-function: $timeFuntion;
+  animation-duration: $duration;
+  animation-delay: $delay;
+  animation-iteration-count: $iteration-count; /*播放次數為無限次*/
+}
+
+@mixin logo-img-size{
+  width: 245px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+@mixin large{
+  @media(max-width:900px){
+    @content
+  }
+}
+
+@mixin pad{
+    @media(max-width:768px){
+      @content
+    }
+}
+
+@mixin mobile{
+    @media(max-width:568px){
+      @content
+    }
+}
+

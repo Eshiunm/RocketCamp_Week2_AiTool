@@ -1,4 +1,33 @@
-<h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<header>
+    <nav>
+        <a href="../pages/index.html" class="logo">
+            <img src="../assets/images/logo.png" alt="首頁圖片" class="logo">
+        </a>
+        
+        <ul class="nav_PC_list">
+            <li class="nav_item"><a href="index.html">首頁</a></li>
+            <li class="nav_item"><a href="pricing.html">定價</a></li>
+        </ul>
+
+        <label for="switch" class="hamburgerMenu_Icon" onclick="toggleImage()">
+            <img id="menuIcon" src="../assets/images/icons/menu.png" >
+        </label>
+    </nav>
+</header>
+
+<!-- 以下為漢堡圖示搭配收合效果的 HTML code -->
+<input type="checkbox" id="switch"> <!-- 這個 checkbox 放在「想要做收合效果的區塊」的上面，因此這邊放在 .mb_nav_box 上方 -->
+<div class="toggle_nav_box">
+    <ul class="nav_mb_list">
+        <li class="nav_item"><a href="index.html">首頁</a></li>
+        <li class="nav_item"><a href="pricing.html">定價</a></li>
+    </ul>
+    <div class="nav_footer">
+        <span>AI工具王 © 2023</span>
+        <ul class="nav_list">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Instagram</a></li>
+        </ul>
+    </div>
+</div>

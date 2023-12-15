@@ -5,15 +5,221 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <%- include('./layout/link_cdn'); -%>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
-
-    <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
-
-    <%- include('./layout/footer'); -%>
-
+    <!-- header -->
+    <div class="container">
+      <%- include('./layout/header'); -%>
+    </div>
+    <!-- 主內容、我們的服務、來自合作夥伴 -->
+    <div class="container">
+      <div class="index_content">
+        <section>
+          <h1 class="index-title">
+            透過 <br>
+            AI 工具王的 <br>
+            強大模型 <br>
+            讓您的業務<br class="md-display-no">更聰明
+          </h1>
+          <a href="#" class="start_button">
+            開始使用
+          </a>
+          <div class="motin">
+            <img class="img_1" src="../assets/images/deco.png" alt="deco">
+            <img class="img_2" src="../assets/images/deco.png" alt="deco">
+            <img class="img_3" src="../assets/images/deco.png" alt="deco">
+          </div>
+        </section>
+        <section class="our_service">
+          <div>
+            <h3 class="col-4">我們的服務</h3>
+            <p class="col-8">我們相信透過 AI 技術，<br>
+              包括圖像識別、自然語言處理和機器翻譯等，讓您更快、更準確地做出決策。</p>
+          </div>
+          <ul class="service_list">
+            <li class="service_item col-4">
+              <img src="../assets/images/icons/flash on.png" alt="flash on">
+              <h4>快速</h4>
+              <p>我們先進的推理基礎設施提供了極短的響應時間，讓你的產品服務不間斷。</p>
+            </li>
+            <li class="service_item col-4">
+              <img src="../assets/images/icons/auto awesome.png" alt="auto awesome">
+              <h4>靈活</h4>
+              <p>我們的服務可以根據您的需求進行靈活調整，同時還可以滿足不同項目和預算的需求。</p>
+            </li>
+            <li class="service_item col-4">
+              <img src="../assets/images/icons/library add.png" alt="library add">
+              <h4>擴充</h4>
+              <p>我們的服務支持多種擴充選項，可以滿足您的不斷增長的 AI 需求。</p>
+            </li>
+          </ul>
+        </section>
+        <section class="from_a_partner">
+          <h3 class="">來自合作夥伴</h3>
+          <div class="bgimg">
+            <ul class="img_list_1">
+              <li class="img_item"><img src="../assets/images/enterprise.png" alt="enterprise"></li>
+              <li class="img_item"><img src="../assets/images/enterprise1.png" alt="enterprise1"></li>
+              <li class="img_item"><img src="../assets/images/enterprise2.png" alt="enterprise2"></li>
+              <li class="img_item"><img src="../assets/images/enterprise3.png" alt="enterprise3"></li>
+              <li class="img_item"><img src="../assets/images/enterprise4.png" alt="enterprise4"></li>
+              <li class="img_item"><img src="../assets/images/enterprise5.png" alt="enterprise5"></li>
+              <li class="img_item"><img src="../assets/images/enterprise6.png" alt="enterprise6"></li>
+              <li class="img_item"><img src="../assets/images/enterprise1.png" alt="enterprise1"></li>
+            </ul>
+            <ul class="img_list_2">
+              <li class="img_item"><img src="../assets/images/enterprise7.png" alt="enterpris7"></li>
+              <li class="img_item"><img src="../assets/images/enterprise8.png" alt="enterprise8"></li>
+              <li class="img_item"><img src="../assets/images/enterprise9.png" alt="enterprise9"></li>
+              <li class="img_item"><img src="../assets/images/enterprise10.png" alt="enterprise10"></li>
+              <li class="img_item"><img src="../assets/images/enterprise11.png" alt="enterprise11"></li>
+              <li class="img_item"><img src="../assets/images/enterprise12.png" alt="enterprise12"></li>
+              <li class="img_item"><img src="../assets/images/enterprise7.png" alt="enterprise7"></li>
+            </ul>
+          </div>
+          <!-- width > 768px 時顯示 partner_list-->
+          <ul class="partner_list">
+            <li class="partner_item col-4">
+              <div class="star_box">
+                <img src="../assets/images/icons/star.png" alt="star">
+                <img src="../assets/images/icons/star.png" alt="star">
+                <img src="../assets/images/icons/star.png" alt="star">
+                <img src="../assets/images/icons/star.png" alt="star">
+                <img src="../assets/images/icons/star.png" alt="star">
+              </div>
+              <p class="partner_feedback">非常喜歡 AI工具王 提供的 AI 模型租賃服務，使用起來非常方便，而且效果非常好。對於我們公司的業務來說，這個服務非常重要，因為我們需要大量的數據進行分析和預測，AI工具王 提供的 AI 模型能夠幫助我們節省大量時間和成本，實在是太棒了！</p>
+              <div class="partner_info">
+                <img src="../assets/images/avatar3.png" alt="avatar3">
+                <div>
+                  <h5>陳小姐</h5>
+                  <p>ABC科技有限公司</p>
+                </div>
+              </div>
+            </li>
+            <li class="partner_item col-4">
+              <div class="star_box">
+                <img src="../assets/images/icons/star.png" alt="star">
+                <img src="../assets/images/icons/star.png" alt="star">
+                <img src="../assets/images/icons/star.png" alt="star">
+                <img src="../assets/images/icons/star.png" alt="star">
+                <img src="../assets/images/icons/star.png" alt="star">
+              </div>
+              <p class="partner_feedback">作為一家醫療器材公司，我們非常關注人工智能技術的應用，而 AI工具王 提供的 AI 模型租賃服務為我們帶來了很大的幫助。我們使用 AI工具王 的模型進行醫學影像分析和預測，這些模型非常精確，能夠幫助我們更好地診斷病情，提高治療效果。感謝 AI工具王 團隊的辛勤工作！</p>
+              <div class="partner_info">
+                <img src="../assets/images/avatar1.png" alt="avatar1">
+                <div>
+                  <h5>劉小姐</h5>
+                  <p>XYZ 醫療器材有限公司</p>
+                </div>
+              </div>
+            </li>
+            <li class="partner_item col-4">
+              <div class="star_box">
+                <img src="../assets/images/icons/star.png" alt="star">
+                <img src="../assets/images/icons/star.png" alt="star">
+                <img src="../assets/images/icons/star.png" alt="star">
+                <img src="../assets/images/icons/star.png" alt="star">
+                <img src="../assets/images/icons/star.png" alt="star">
+              </div>
+              <p class="partner_feedback">我們銀行一直在尋找能夠幫助我們提高風險控制和客戶服務的解決方案，而 AI工具王 提供的 AI 模型租賃服務正好滿足了我們的需求。我們使用 AI工具王 的模型進行客戶信用評估和詐騙檢測等任務，這些模型非常準確，能夠幫助我們更好地控制風險，提高客戶滿意度。非常感謝 AI工具王 團隊的支持！</p>
+              <div class="partner_info">
+                <img src="../assets/images/avatar2.png" alt="avatar2">
+                <div>
+                  <h5>黃先生</h5>
+                  <p>EFG 銀行</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          
+          <!-- width < 768px 時顯示 swiper -->
+          <!-- Slider main container -->
+          <div class="swiper myswiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="star_box">
+                  <img src="../assets/images/icons/star.png" alt="star">
+                  <img src="../assets/images/icons/star.png" alt="star">
+                  <img src="../assets/images/icons/star.png" alt="star">
+                  <img src="../assets/images/icons/star.png" alt="star">
+                  <img src="../assets/images/icons/star.png" alt="star">
+                </div>
+                <p class="partner_feedback">非常喜歡 AI工具王 提供的 AI 模型租賃服務，使用起來非常方便，而且效果非常好。對於我們公司的業務來說，這個服務非常重要，因為我們需要大量的數據進行分析和預測，AI工具王 提供的 AI 模型能夠幫助我們節省大量時間和成本，實在是太棒了！</p>
+                <div class="partner_info">
+                  <img src="../assets/images/avatar3.png" alt="avatar3">
+                  <div>
+                    <h5>陳小姐</h5>
+                    <p>ABC科技有限公司</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="star_box">
+                  <img src="../assets/images/icons/star.png" alt="star">
+                  <img src="../assets/images/icons/star.png" alt="star">
+                  <img src="../assets/images/icons/star.png" alt="star">
+                  <img src="../assets/images/icons/star.png" alt="star">
+                  <img src="../assets/images/icons/star.png" alt="star">
+                </div>
+                <p class="partner_feedback">作為一家醫療器材公司，我們非常關注人工智能技術的應用，而 AI工具王 提供的 AI 模型租賃服務為我們帶來了很大的幫助。我們使用 AI工具王 的模型進行醫學影像分析和預測，這些模型非常精確，能夠幫助我們更好地診斷病情，提高治療效果。感謝 AI工具王 團隊的辛勤工作！</p>
+                <div class="partner_info">
+                  <img src="../assets/images/avatar1.png" alt="avatar1">
+                  <div>
+                    <h5>劉小姐</h5>
+                    <p>XYZ 醫療器材有限公司</p>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="star_box">
+                  <img src="../assets/images/icons/star.png" alt="star">
+                  <img src="../assets/images/icons/star.png" alt="star">
+                  <img src="../assets/images/icons/star.png" alt="star">
+                  <img src="../assets/images/icons/star.png" alt="star">
+                  <img src="../assets/images/icons/star.png" alt="star">
+                </div>
+                <p class="partner_feedback">我們銀行一直在尋找能夠幫助我們提高風險控制和客戶服務的解決方案，而 AI工具王 提供的 AI 模型租賃服務正好滿足了我們的需求。我們使用 AI工具王 的模型進行客戶信用評估和詐騙檢測等任務，這些模型非常準確，能夠幫助我們更好地控制風險，提高客戶滿意度。非常感謝 AI工具王 團隊的支持！</p>
+                <div class="partner_info">
+                  <img src="../assets/images/avatar2.png" alt="avatar2">
+                  <div>
+                    <h5>黃先生</h5>
+                    <p>EFG 銀行</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+    
+    <!-- AI工具介紹 -->
+    <%- include('./layout/application') -%>
+    
+    <!-- 現在就來建立屬於你的服務吧 -->
+    <div class="container">
+      <section class="getYourOwnService">
+        <h5>現在就來建立<br class="display_md_no">屬於你的服務吧</h5>
+        <a href="#" class="start_button">
+          <span>開始使用</span>
+          <img src="../assets/images/icons/call made.png" alt="call made">
+        </a>
+      </section>
+    </div>
+    
+    <!-- footer -->
+    <div class="container">
+      <%- include('./layout/footer'); -%>
+    </div>
+    
+    
+    <%- include('./layout/Js_CDN') -%>
+    <script src="./js/all.js"></script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>

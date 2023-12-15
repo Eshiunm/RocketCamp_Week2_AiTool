@@ -1,5 +1,18 @@
+@import './reset';
+@import './variables';
+@import './mixin';
+@import './utilities';
+
+/* Custom Animation Name" */
+@import './keyframe.scss';
+
+/* layout */
+@import './layout/application.scss';
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
-
+/* pages */
 @import './pages/index.scss';
+@import './pages/pricing.scss';
+
+

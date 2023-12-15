@@ -1,3 +1,299 @@
-.index-title {
-  font-size: 100px;
+.index_content{
+  margin-bottom: 160px;
+  .index-title {
+    font-size: $fs-30;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 40px;
+    @include pad{
+      font-size: $fs-20;
+    }
+    @include mobile{
+      font-size: $fs-12;
+    }
+  }
+  .start_button{
+    display: inline-block;
+    width: 160px;
+    height: 64px;
+    color: white;
+    text-align: center;
+    line-height: 64px;
+    border: 1px solid white;
+    font-weight: 900;
+    border-radius: 16px;
+    margin-bottom: 100px;
+    @include mobile{
+      margin-bottom: 180px;
+    }
+    &:hover{
+      color: black;
+      background-color: white;
+    }
+  }
+  .motin{
+    margin-bottom: 160px;
+    display: flex;
+    justify-content: end;
+    overflow: hidden;
+    .img_1{
+      @include animation_moveUp(linear,4s,.4s,infinite)
+    }
+    .img_2{
+      @include animation_moveUp(linear,4s,.2s,infinite)
+    }
+    .img_3{
+      @include animation_moveUp(linear,4s,0,infinite)
+    }
+    @include pad{
+      img{
+        width: 117px;
+        height: 117px;
+      }
+    }
+    @include mobile{
+      margin-bottom: 62px;
+      justify-content: center;
+    }
+  }
+  .md-display-no{
+    display: none;
+    @include pad{
+      display:inline;
+    }
+  }
 }
+
+.our_service{
+  margin-bottom: 160px;
+  div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    @include pad{
+      flex-wrap: wrap;
+    }
+  }
+  h3{
+    font-size: $fs-8;
+    font-weight: 900;
+    @include pad{
+      width: 100%;
+      font-size: $fs-5;
+      margin-bottom: 24px;
+    }
+  }
+  p{
+    font-size: $fs-12;
+    font-weight: 900;
+    @include pad{
+      width: 100%;
+      font-size: $fs-8;
+    }
+  }
+  .service_list{
+    display: flex;
+    justify-content: space-between;
+    @include pad{
+      flex-wrap: wrap;
+    }
+    .service_item{
+      display: flex;
+      flex-direction: column;
+      padding: 80px 40px;
+      border: 1px solid white;
+      border-radius: 16px;
+      @include pad{
+        width: 100%;
+        margin-bottom: 12px;
+        padding: 40px 20px;
+      }
+    }
+    img{
+      display: block;
+      width: 80px;
+      margin-bottom: 20px;
+    }
+    h4{
+      font-size: $fs-8;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+    p{
+      font-size: $fs-4;
+      font-weight: 400;
+    }
+  }
+}
+
+.from_a_partner{
+  margin-bottom: 160px;
+  h3{
+    font-size: $fs-8;
+    font-weight: 900;
+    margin-bottom: 80px;
+  }
+
+
+  .bgimg{
+    margin-bottom: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+
+    // 以下兩個偽元素為遮罩效果
+    &::before{
+      position: absolute;
+      content: '';
+      left: 0;
+      height: 100%;
+      width: 15%;
+      background:linear-gradient( to left,rgba(255, 0, 0, 0) ,rgb(0, 0, 0));
+      z-index: 10;
+    }
+    &::after{
+      position: absolute;
+      content: '';
+      right: 0;
+      height: 100%;
+      width: 10%;
+      background:linear-gradient( to right,rgba(255, 0, 0, 0) ,rgb(0, 0, 0));
+    }
+  }
+
+
+  .img_list_1{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    mask: linear-gradient(90deg, black 84%, transparent 93%);
+  }
+  .img_list_2{
+    display: flex;
+    justify-content: space-between;
+    mask: linear-gradient(90deg, black 84%, transparent 100%);
+  }
+  .img_item{
+    img{
+      height: 40px;
+    }
+  }
+
+
+
+  .partner_list{
+    display: flex;
+    justify-content: space-between;
+    @include pad{
+      display: none;
+    }
+  }
+  .partner_item{
+    padding: 40px;
+    background-color: $black-80;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .partner_feedback{
+    font-weight: 400;
+  }
+  .partner_info{
+    display: flex;
+    gap: 16px;
+    img{
+      width: 48px;
+      height: 48px;
+    }
+    div{
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    h5{
+      font-size: $fs-4;
+      font-weight: 700;
+    }
+    p{
+      font-size: $fs-14px;
+      font-weight: 400;
+    }
+  }
+  
+  .swiper{
+    display: none;
+    
+    gap:20px;
+    width: 100%;
+    @include pad{
+      display: block;
+    }
+    background-color: black;
+    .swiper-slide{
+      padding: 20px;
+      background-color: #FFFFFF14;
+      border-radius: 16px;
+    }
+    .star_box, p{
+      margin-bottom: 20px;
+    }
+    .swiper-pagination-bullet-active{
+      background-color: white !important;
+    }
+    .swiper-pagination-bullet{
+      background-color: white !important;
+    }
+    
+  }
+}
+
+.getYourOwnService{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+  margin-bottom: 80px;
+  h5{
+    font-size: $fs-12;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  a{
+    color: white;
+    padding: 20px 32px 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: $fs-5;
+    font-weight: 900;
+    border: 1px solid white;
+    border-radius: 16px;
+    img{
+      width: 24px;
+      height: 24px;
+    }
+  }
+  
+  .display_md_no{
+    display: none;
+  }
+
+  @include pad{
+    padding: 0 60px;
+    h5{
+      font-size: $fs-8;
+      margin-bottom: 32px;
+    }
+    
+  .display_md_no{
+    display: block;
+  }
+  }
+}
+
+

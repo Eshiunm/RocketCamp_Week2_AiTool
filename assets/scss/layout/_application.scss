@@ -1,0 +1,235 @@
+.bg-white{
+  background-color: white;
+  border-radius: 128px;
+  @include pad{
+    border-radius: 64px;
+  }
+  @include mobile{
+    border-radius: 16px;
+  }
+}
+  
+.application{
+  padding: 160px 0;
+  margin-bottom: 87px;
+  @include pad{
+    padding: 80px 0;
+  }
+  h2{
+    font-size: $fs-20;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 80px;
+    text-align: center;
+    @include pad{
+      font-size: $fs-12;
+    }
+    @include mobile{
+      font-size: $fs-8;
+      margin-bottom: 32px;
+    }
+  }
+  .display-md-no{
+    display: none;
+    @include large{
+      display: block;
+    }
+  }
+  .search_box{
+    display: flex;
+    gap: 12px;
+    padding: 20px 0 20px 40px;
+    background-color: $black-20;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    img{
+      width: 24px;
+      height: 24px;
+      vertical-align: middle;
+    }
+  }
+  #search{
+    width: 50%;
+    border: none;
+    background-color: $black-20;  
+    &:focus{
+      outline: none ;
+    }
+  }
+  .filter_box{
+    margin-bottom: 40px;
+  }
+  .filter_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include large{
+      margin-bottom: 16px;
+    }
+  }
+  .filter_button, .order_button{
+    border: 1px solid $black-20;
+    padding: 20px 32px 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    border-radius: 16px;
+    span{
+      color: black;
+      font-weight: 400;
+    }
+    img{
+      width: 16px;
+      height: 16px;
+    }
+  }
+  .option_list{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    @include large{
+      display: none;
+    }
+  }
+  .option_item{
+    padding: 8px 16px;
+    color: $black-60;
+    &:hover{
+      border-radius: 16px;
+      color: #000;
+      font-weight: 700;
+      background-color: #fff;
+      background-color: $black-20;
+    }
+  }
+
+  .swiper_option_list{
+    display: none;
+    .swiper-wrapper{
+      display: flex;
+      justify-content: center;
+    }
+    @include large{
+      display: block;
+      
+    }
+    @include pad{
+      width: 80%;
+    }
+    @include mobile{
+      width: 100%;
+    }
+  }
+  .swiper-slide{
+    text-align: center;
+    width: 100px !important;
+  }
+  .swiper_option_item{
+    padding: 0 16px;
+    color: $black-60;
+    &:hover{
+      border-radius: 16px;
+      color: #000;
+      font-weight: 700;
+      background-color: #fff;
+      background-color: $black-20;
+    }
+  }
+
+  .active{
+    background-color: $black-20;
+    border-radius: 16px;
+    font-weight: 700;
+    color: #000000;
+  }
+  .product_list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include mobile{
+      justify-content: center;
+    }
+  }
+
+  .product_item{
+    color: black;
+    border: 1px solid $black-20;
+    border-radius: 16px;
+    margin-bottom: 24px;
+    @include pad{
+      width: 48%;
+    }
+    @include mobile{
+      width: 76%;
+    }
+    @media(max-width:430px){
+      width: 100%;
+    }
+    a{
+      border-radius: 16px 16px 0 0 ;
+      /*要將顯示設定為 block 才會有效果*/
+      display: inline-block;
+      /*圖片放大時會將超出外框的部分隱藏起來，*/
+      overflow:hidden;
+    }
+    img{
+      border-radius: 16px 16px 0 0 ;
+      /*當發生狀態改變時會用0.2秒的時間換到另一個狀態*/
+      transition: all 0.2s linear;
+      &:hover{
+        transform: scale(1.21); /* 用0.2秒放大原本的1.21倍 */
+      }
+    }
+    div{
+      overflow:hidden;
+      padding: 20px 32px;
+    }
+    .product_title{
+      font-size: $fs-5;
+      font-weight: 900;
+      margin-bottom: 12px;
+    }
+    .product_introduction{
+      font-size: $fs-14px;
+      font-weight: 400;
+    }
+    .card_body{
+      display: flex;
+      justify-content: space-between;
+      h6{
+        font-weight: 700;
+      }
+      span{
+        font-weight: 400;
+      }
+    }
+    .card_footer{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .page_list{
+    display: flex;
+    justify-content: end;
+    gap: 4px;
+    a{
+      display: inline-block;
+      text-align: center;
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+      font-size: $fs-14px;
+      font-weight: 700;
+      border-radius: 16px;
+      color: black;
+    }
+    .active{
+      color: white;
+      background-color: black;
+    }
+  }
+
+    
+}

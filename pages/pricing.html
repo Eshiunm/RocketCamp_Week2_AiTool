@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <%- include('./layout/link_cdn'); -%>
+    <%- include('./layout/script'); -%>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="container">
+      <%- include('./layout/header'); -%>
+    </div>
+    
+    <!-- 主內容 -->
+    <div class="container">
+        <div class="pricing_content">
+            <section class="title">
+                <h1>
+                    用多少，<br>
+                    付多少。
+                </h1>
+                <div>
+                    <p class="col-6">我們相信，最靈活的取用機制，才能最大化的幫助你業務的推動。</p>
+                </div>
+                <div class="motin">
+                    <img class="img_1" src="../assets/images/deco.png" alt="deco">
+                    <img class="img_2" src="../assets/images/deco.png" alt="deco">
+                    <img class="img_3" src="../assets/images/deco.png" alt="deco">
+                </div>
+            </section>
+            <section class="pricing_card">
+                <h2>定價</h2>
+                <ul class="pricing_list">
+                    <li class="pricing_item col-6">
+                        <div class="pricing_card_content">
+                            <h3>琪琪</h3>
+                            <ul class="tool_features">
+                                <li>初級</li>
+                                <li>速度最快</li>
+                            </ul>
+                        </div>
+                        <div class="pricing_card_footer">
+                            <p><span class="token_price">NT$5</span><span>／1k tokens</span></p>
+                            <p>
+                                <span class="start_use">開始使用</span>
+                                <img src="../assets/images/icons/call made.png" alt="call made">
+                            </p>
+                        </div>
+                    </li>
+                    <li class="pricing_item col-6">
+                        <div class="pricing_card_content">
+                            <h3>昊昊</h3>
+                            <ul class="tool_features">
+                                <li>中級</li>
+                            </ul>
+                        </div>
+                        <div class="pricing_card_footer">
+                            <p><span class="token_price">NT$5</span><span>／1k tokens</span></p>
+                            <p>
+                                <span class="start_use">開始使用</span>
+                                <img src="../assets/images/icons/call made.png" alt="call made">
+                            </p>
+                        </div>
+                    </li>
+                    <li class="pricing_item col-6">
+                        <div class="pricing_card_content">
+                            <h3>卡卡</h3>
+                            <ul class="tool_features">
+                                <li>高級</li>
+                            </ul>
+                        </div>
+                        <div class="pricing_card_footer">
+                            <p><span class="token_price">NT$5</span><span>／1k tokens</span></p>
+                            <p>
+                                <span class="start_use">開始使用</span>
+                                <img src="../assets/images/icons/call made.png" alt="call made">
+                            </p>
+                        </div>
+                    </li>
+                    <li class="pricing_item col-6">
+                        <div class="pricing_card_content">
+                            <h3>杰杰</h3>
+                            <ul class="tool_features">
+                                <li>最高級</li>
+                                <li>資訊最完整</li>
+                            </ul>
+                        </div>
+                        <div class="pricing_card_footer">
+                            <p><span class="token_price">NT$5</span><span>／1k tokens</span></p>
+                            <p>
+                                <span class="start_use">開始使用</span>
+                                <img src="../assets/images/icons/call made.png" alt="call made">
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="rule">
+                <h2>使用規範</h2>
+                <ul class="rule_list col-8">
+                    <li class="rule_item">
+                        <h3>守法</h3>
+                        <P>請遵守相關的法規和政策，不得進行任何違法違規的活動。</P>
+                    </li>
+                    <li class="rule_item">
+                        <h3>資訊安全</h3>
+                        <P>請務必保護好自己的帳號和密碼，不得將其透露給他人。</P>
+                    </li>
+                    <li class="rule_item">
+                        <h3>守密</h3>
+                        <P>需對使用過程中產生的數據負責，不得擅自泄露數據。</P>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <!-- AI工具介紹 -->
+    <%- include('./layout/application') -%>
+
+    <!-- 常見問題 -->
+    <div class="container">
+        <section class="FAQ">
+            <h2>常見問題</h2>
+                <ul class="question_list col-8">
+                    <li class="question_item">
+                        <!-- 當 for="detail-one" 的 label 標籤裡的內容被點到時，這個checkbox 會打勾 -->
+                        <input type="checkbox" name="detail-1" id="detail-1" />
+                        <details open> <!-- 為了製作收合的動畫效果，預設先打開 -->
+                            <summary>
+                                <label for="detail-1">
+                                    <img class="add" src="../assets/images/icons/add.png" alt="add">
+                                    <img class="remove" src="../assets/images/icons/remove.png" alt="remove">
+                                    如何選擇適合的AI模型？
+                                </label>
+                            </summary>
+                            <p>
+                                選擇適合的AI模型需要考慮您的應用場景、需要解決的問題、可用的資源以及預算等因素。可以通過對比不同模型的性能、準確率、速度等指標，以及與其他用戶的評價與反饋來選擇最適合的模型。
+                            </p>
+                        </details>
+                    </li>
+                    <li class="question_item">
+                        <input type="checkbox" name="detail-2" id="detail-2" />
+                        <details open> <!-- 為了製作收合的動畫效果，預設先打開 -->
+                            <summary>
+                                <label for="detail-2">
+                                    <img class="add" src="../assets/images/icons/add.png" alt="add">
+                                    <img class="remove" src="../assets/images/icons/remove.png" alt="remove">
+                                    租用模型的費用是如何計算的？
+                                </label>
+                            </summary>
+                            <p>
+                                租用模型的費用，通常會根據模型的性能和使用時間等因素進行計算。具體而言，模型的西性能可以根據其精度、速度占用資源等指標來評估;而使用時間可以根據租用時間的長短來計算，通常會按小時、天或月來計算。綜合考慮這些因素，系統會自動計算出對應的出用費用。
+                            </p>
+                        </details>
+                    </li>
+                    <li class="question_item">
+                        <input type="checkbox" name="detail-3" id="detail-3" />
+                        <details open> <!-- 為了製作收合的動畫效果，預設先打開 -->
+                            <summary>
+                                <label for="detail-3">
+                                    <img class="add" src="../assets/images/icons/add.png" alt="add">
+                                    <img class="remove" src="../assets/images/icons/remove.png" alt="remove">
+                                    如何進行付款？
+                                </label>
+                            </summary>
+                            <p>
+                                付款方式可以通過網站上提供的線上支付平臺進行支付。具體而言，可以選擇信用卡、銀行轉帳、電子錢包等不同的支付方式進行支付。在支付前，您需要先登入網站並選擇合適的租用方案，系統會自動計算出對應的租用費用和支付金額，然後您可以選擇適合的支付方式進行支付。完成支付後，系統會自動向您提供相應的服務。
+                            </p>
+                        </details>
+                    </li>
+                    <li class="question_item">
+                        <input type="checkbox" name="detail-4" id="detail-4" />
+                        <details open> <!-- 為了製作收合的動畫效果，預設先打開 -->
+                            <summary>
+                                <label for="detail-4">
+                                    <img class="add" src="../assets/images/icons/add.png" alt="add">
+                                    <img class="remove" src="../assets/images/icons/remove.png" alt="remove">
+                                    租用模型的期限是多久？
+                                </label>
+                            </summary>
+                            <p>
+                                租用模型的期限可以根據您的需求進行設置，通常可以選擇幾個小時、幾天或幾月等不同的時間段。
+                            </p>
+                        </details>
+                    </li>
+                    <li class="question_item">
+                        <input type="checkbox" name="detail-5" id="detail-5" />
+                        <details open> <!-- 為了製作收合的動畫效果，預設先打開 -->
+                            <summary>
+                                <label for="detail-5">
+                                    <img class="add" src="../assets/images/icons/add.png" alt="add">
+                                    <img class="remove" src="../assets/images/icons/remove.png" alt="remove">
+                                    如果在使用過程中遇到問題，應該怎麼處理？
+                                </label>
+                            </summary>
+                            <p>
+                                如果在使用過程中遇到問題，您可以聯繫客服或技術支持人員進行諮詢或報告問題。您也可以通過網站上的幫助中心或社區論壇尋找相關的解決方案和回答。
+                            </p>
+                        </details>
+                    </li>
+                </ul>
+        </section>
+    </div>
+
+    <!-- footer -->
+    <div class="container">
+      <%- include('./layout/footer'); -%>
+    </div>
+    
+    <%- include('./layout/Js_CDN') -%>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

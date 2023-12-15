@@ -1,4 +1,111 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+header{
+  padding: 16px 0;
+  margin-bottom: 40px;
+  border-bottom: 1px solid white;
+  
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo{
+    @include logo-img-size;
+    @include mobile{
+      width: 147px;
+      height: 24px;
+    }
+  }
+  
+  .nav_PC_list{
+    display: flex;
+    gap: 20px;
+    .nav_item{
+      display: flex;
+      align-items: center;
+    }
+    a{
+      color: $white;
+      font-weight: 700;
+      padding: 12px 0;
+    }
+
+    @include pad{
+      display: none;
+    }
+  }
+  
+  .hamburgerMenu_Icon{
+    display: none; /* width 768px 以上時隱藏漢堡 */
+    cursor: pointer;/* 滑鼠移到漢堡時，滑鼠指標變成手指 */
+    img{
+      width: 24px;
+      height: 24px;
+    }
+    @include pad{ /* width 768px 以下顯示漢堡 */
+      display: inline-block;
+    }
+  }
+  
 }
+
+.toggle_nav_box{
+  display: none;/* 一開始先將按下漢堡後會出現的區塊給隱藏 */
+  max-height: 0;/* 最大高度設為 0 */
+  overflow: hidden;/* 因為最大高度設為0，裡面的內容一定會超出外框，所以用 hidden 將超出外框的元素隱藏 */
+  transition: .5s;/* 用0.5秒的時間，將最大高度從 0 變成 800px ( 800px 怎來的？在下面，有一個「input:checked ~ .mb_nav_box」選擇器 ) */
+  @include pad{
+    display: block;/*寬度 768px 以下顯示 */
+  }
+  
+  .nav_mb_list{
+    max-height: 584px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+    padding: 152px 0 192px 0 ;
+    .nav_item{
+      display: flex;
+      justify-content: center;
+    }
+    a{
+      color: $white;
+      font-size:80px;
+      font-weight: 900;
+    }
+    @include pad{
+
+    }
+  }
+  .nav_footer{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px 0 ;
+    .nav_list{
+      display: flex;
+      gap: 20px;
+    }
+    span{
+      font-weight: 700;
+    }
+    a{
+      color: white;
+      font-weight: 700;
+      &:hover{
+        color: black;
+        background-color: white;
+        padding: 10px 0;
+        border-radius: 16px;
+      }
+    }
+  }
+}
+/* 將按下漢堡後要出現的區塊高度設定為 800px */
+input:checked ~ .toggle_nav_box {
+  max-height: 800px;
+}
+input[id='switch']{
+  display: none; /* 隱藏checkbox圖案 */
+}
+
+
