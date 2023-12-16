@@ -11,55 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;700;900&family=Roboto&family=Rubik+Bubbles&family=Shadows+Into+Light&family=Silkscreen&display=swap" rel="stylesheet">
 
 <!-- swiper cdn -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />    <script>
-    //來自合作夥伴的輪播效果
-    const swiper1 = new Swiper('.myswiper', {
-    // Optional parameters
-    loop: true,
-    mousewheel: false, //滑鼠滾輪可移動
-    spaceBetween:24, // 圖片與圖片之間的距離
-    // If we need pagination
-    pagination: {
-    el: '.swiper-pagination', //分頁效果
-    },
-    });
-
-    //fliterbox 中間選項輪播特效
-    const swiper2 = new Swiper('.swiper_option_list', {
-    // Optional parameters
-    loop: true,
-    mousewheel: true, //滑鼠滾輪可移動
-    spaceBetween:6, // 圖片與圖片之間的距離
-    // // If we need pagination
-    // pagination: {
-    //   el: '.swiper-pagination', //分頁效果
-    // },
-    breakpoints: {
-    768: {//width 768px 以上會顯示10個slide，且 slide 與 slide 之間的間隔為10px
-        slidesPerView: 6,
-        spaceBetween: 1,// 圖片與圖片之間的距離
-    },
-    375: {//width 768px 以上會顯示10個slide，且 slide 與 slide 之間的間隔為10px
-        slidesPerView: 5,
-        spaceBetween: 1,// 圖片與圖片之間的距離
-    },
-    },
-    });
-
-
-    function toggleImage() {
-        var img = document.getElementById('menuIcon');
-        var currentSrc = img.src;
-        // 切換圖片
-        if (currentSrc.endsWith('/menu.png')) {
-            img.src = '../assets/images/icons/close.png';
-        } else if (currentSrc.endsWith('/close.png')) {
-        setTimeout(function(){
-            img.src = '../assets/images/icons/menu.png';
-        }, 400)
-        }
-    }
-</script>    <script type="module" crossorigin src="/RocketCamp_Week2_AiTool/assets/all-277bfa25.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />    <script type="module" crossorigin src="/RocketCamp_Week2_AiTool/assets/all-bfb6e290.js"></script>
     <link rel="stylesheet" href="/RocketCamp_Week2_AiTool/assets/all-f3836d16.css">
   </head>
   <body>
@@ -76,7 +28,7 @@
             <li class="nav_item"><a href="pricing.html">定價</a></li>
         </ul>
 
-        <label for="switch" class="hamburgerMenu_Icon" onclick="toggleImage()">
+        <label for="switch" class="hamburgerMenu_Icon">
             <img id="menuIcon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAvSURBVHgB7dGxDQAgDMRAh/13hjRI9ERKEV/1XxukX/GenSgQ6e6Fuhl5ACNLcAChLQwKhKqgjgAAAABJRU5ErkJggg==" >
         </label>
     </nav>
