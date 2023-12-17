@@ -101,7 +101,7 @@
       display: flex;
       flex-direction: column;
       padding: 80px 40px;
-      border: 1px solid white;
+      border: 1px solid $black-80;
       border-radius: 16px;
       @include pad{
         width: 100%;
@@ -135,14 +135,45 @@
   }
 
 
-  .bgimg{
+  .logo_wall{
     margin-bottom: 160px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     position: relative;
-
-    // 以下兩個偽元素為遮罩效果
+    @include pad{
+      margin-bottom: 80px;
+    }
+    @include mobile{
+      margin-bottom: 48px;
+    }
+    img{
+      height: 40px;
+    }
+    .logo_Wrapper{
+      overflow: hidden;
+      white-space: nowrap;/* 內層元素要超過寬度時，不會掉到下一行 */
+    }
+    .marquee_1{
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      animation-name:scroll_1 ;
+      animation-timing-function: linear;
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
+      margin-bottom: 20px;
+    }
+    .marquee_2{
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      animation-name:scroll_1 ;
+      animation-timing-function: linear;
+      animation-duration: 18s;
+      animation-iteration-count: infinite;
+    }
+    // 以下兩個偽元素為logo牆左右兩邊的遮罩效果
     &::before{
       position: absolute;
       content: '';
@@ -160,28 +191,14 @@
       width: 10%;
       background:linear-gradient( to right,rgba(255, 0, 0, 0) ,rgb(0, 0, 0));
     }
+
   }
 
-
-  .img_list_1{
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    mask: linear-gradient(90deg, black 84%, transparent 93%);
+  @keyframes scroll_1{
+    0%{transform: translateX(0px)}
+    100%{transform: translateX(-1080px)}
   }
-  .img_list_2{
-    display: flex;
-    justify-content: space-between;
-    mask: linear-gradient(90deg, black 84%, transparent 100%);
-  }
-  .img_item{
-    img{
-      height: 40px;
-    }
-  }
-
-
-
+  
   .partner_list{
     display: flex;
     justify-content: space-between;
@@ -191,7 +208,7 @@
   }
   .partner_item{
     padding: 40px;
-    background-color: $black-80;
+    background-color: rgba(255, 255, 255, 8%);
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -276,6 +293,13 @@
     img{
       width: 24px;
       height: 24px;
+    }
+    &:hover{
+      color: black;
+      background-color: white;
+      img{
+        display: none;
+      }
     }
   }
   

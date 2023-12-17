@@ -1,2 +1,2 @@
 import './assets/scss/all.scss';
-import './pages/js/all.js';
+import './assets/JS/all.js';

@@ -1,3 +1,6 @@
+import ImgClose from "../images/icons/close.png";
+import ImgBurger from "../images/icons/menu.png";
+
 //來自合作夥伴的輪播效果
 const swiper1 = new Swiper('.myswiper', {
   // Optional parameters
@@ -32,16 +35,21 @@ const swiper2 = new Swiper('.swiper_option_list', {
   },
 });
 
-
+//漢堡選單開關特效
+const burgerIcon = document.querySelector(".hamburgerMenu_Icon");
+burgerIcon.addEventListener("click", () =>{
+  toggleImage();
+});
 function toggleImage() {
-  var img = document.getElementById('menuIcon');
-  var currentSrc = img.src;
-  // 切換圖片
-  if (currentSrc.endsWith('/menu.png')) {
-      img.src = '../assets/images/icons/close.png';
-  } else if (currentSrc.endsWith('/close.png')) {
+  const img = document.querySelector("#menuIcon");
+  const switcher = document.querySelector("#switch");
+  
+  if(!switcher.checked){
+    img.src = ImgClose;
+  }
+  else{
     setTimeout(function(){
-      img.src = '../assets/images/icons/menu.png';
-    }, 400)
+      img.src = ImgBurger;
+    }, 400);
   }
 }

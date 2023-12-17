@@ -4,8 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>AI工具王</title>
+    <link rel="shortcut icon" href="../assets/images/favicon.ico" type="image/x-icon">
     <%- include('./layout/link_cdn'); -%>
+    <%- include('./layout/Js_CDN') -%>
   </head>
   <body>
     <!-- header -->
@@ -57,28 +59,42 @@
         </section>
         <section class="from_a_partner">
           <h3 class="">來自合作夥伴</h3>
-          <div class="bgimg">
-            <ul class="img_list_1">
-              <li class="img_item"><img src="../assets/images/enterprise.png" alt="enterprise"></li>
-              <li class="img_item"><img src="../assets/images/enterprise1.png" alt="enterprise1"></li>
-              <li class="img_item"><img src="../assets/images/enterprise2.png" alt="enterprise2"></li>
-              <li class="img_item"><img src="../assets/images/enterprise3.png" alt="enterprise3"></li>
-              <li class="img_item"><img src="../assets/images/enterprise4.png" alt="enterprise4"></li>
-              <li class="img_item"><img src="../assets/images/enterprise5.png" alt="enterprise5"></li>
-              <li class="img_item"><img src="../assets/images/enterprise6.png" alt="enterprise6"></li>
-              <li class="img_item"><img src="../assets/images/enterprise1.png" alt="enterprise1"></li>
-            </ul>
-            <ul class="img_list_2">
-              <li class="img_item"><img src="../assets/images/enterprise7.png" alt="enterpris7"></li>
-              <li class="img_item"><img src="../assets/images/enterprise8.png" alt="enterprise8"></li>
-              <li class="img_item"><img src="../assets/images/enterprise9.png" alt="enterprise9"></li>
-              <li class="img_item"><img src="../assets/images/enterprise10.png" alt="enterprise10"></li>
-              <li class="img_item"><img src="../assets/images/enterprise11.png" alt="enterprise11"></li>
-              <li class="img_item"><img src="../assets/images/enterprise12.png" alt="enterprise12"></li>
-              <li class="img_item"><img src="../assets/images/enterprise7.png" alt="enterprise7"></li>
-            </ul>
+          
+          <!-- logo 跑馬燈牆效果 -->
+          <div class="logo_wall">
+              <div class="logo_Wrapper">
+                <div class="marquee_1">
+                  <img src="../assets/images/enterprise1.png" alt="enterprise1">
+                  <img src="../assets/images/enterprise2.png" alt="enterprise2">
+                  <img src="../assets/images/enterprise3.png" alt="enterprise3">
+                  <img src="../assets/images/enterprise4.png" alt="enterprise4">
+                  <img src="../assets/images/enterprise5.png" alt="enterprise5">
+                  <img src="../assets/images/enterprise6.png" alt="enterprise6">
+                  <img src="../assets/images/enterprise1.png" alt="enterprise1">
+                  <img src="../assets/images/enterprise2.png" alt="enterprise2">
+                  <img src="../assets/images/enterprise3.png" alt="enterprise3">
+                  <img src="../assets/images/enterprise4.png" alt="enterprise4">
+                  <img src="../assets/images/enterprise5.png" alt="enterprise5">
+                  <img src="../assets/images/enterprise6.png" alt="enterprise6">
+                  <img src="../assets/images/enterprise1.png" alt="enterprise1">
+                </div>
+                <div class="marquee_2">
+                  <img src="../assets/images/enterprise7.png" alt="enterpris7">
+                  <img src="../assets/images/enterprise8.png" alt="enterprise8">
+                  <img src="../assets/images/enterprise9.png" alt="enterprise9">
+                  <img src="../assets/images/enterprise10.png" alt="enterprise10">
+                  <img src="../assets/images/enterprise11.png" alt="enterprise11">
+                  <img src="../assets/images/enterprise12.png" alt="enterprise12">
+                  <img src="../assets/images/enterprise7.png" alt="enterprise7">
+                  <img src="../assets/images/enterprise8.png" alt="enterprise8">
+                  <img src="../assets/images/enterprise9.png" alt="enterprise9">
+                  <img src="../assets/images/enterprise10.png" alt="enterprise10">
+                  <img src="../assets/images/enterprise11.png" alt="enterprise11">
+                  <img src="../assets/images/enterprise12.png" alt="enterprise12">
+              </div>
+              </div>
           </div>
-          <!-- width > 768px 時顯示 partner_list-->
+          <!-- width 大於 768px 時顯示 partner_list-->
           <ul class="partner_list">
             <li class="partner_item col-4">
               <div class="star_box">
@@ -133,7 +149,7 @@
             </li>
           </ul>
           
-          <!-- width < 768px 時顯示 swiper -->
+          <!-- width 小於 768px 時顯示 swiper -->
           <!-- Slider main container -->
           <div class="swiper myswiper">
             <!-- Additional required wrapper -->
@@ -217,9 +233,6 @@
       <%- include('./layout/footer'); -%>
     </div>
     
-    
-    <%- include('./layout/Js_CDN') -%>
-    <script src="./js/all.js"></script>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
